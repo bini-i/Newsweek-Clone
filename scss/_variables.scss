@@ -5,8 +5,9 @@ $color_gray: #9a9a9a;
 $color_gray_l: #f4f5f6;
 $color_black: rgb(0, 0, 0);
 
+$ol_screen: "(min-width: 768px)";
 $xl_screen: "(min-width: 992px)";
-$lg_screen: "(max-width: 991px)";
+$lg_screen: "(min-width: 768px) and (max-width: 991px)";
 $md_screen: "(max-width: 767px)";
 $sm_screen: "(max-width: 576px)";
 $xs_screen: "(max-width: 420px)";

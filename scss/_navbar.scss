@@ -8,7 +8,6 @@
 
   .logo {
     height: 30px;
-
     @include breakpoint($xl_screen) {
       height: 60px;
     }
@@ -21,8 +20,21 @@
     color: $color_gray;
   }
 
+  .login {
+    color: $color_white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 20px;
+    @include breakpoint($md_screen) {
+      display: none;
+    }
+  }
+
   .user {
     color: $color_gray_l;
+    @include breakpoint($ol_screen) {
+      display: none;
+    }
   }
 
   .links {
@@ -39,7 +51,6 @@
     span {
       color: $color_white;
     }
-
     @include breakpoint($xl_screen) {
       display: flex;
       margin-bottom: -40px;
@@ -60,9 +71,57 @@
       margin-left: 5px;
     }
   }
-
   @include breakpoint($xl_screen) {
     display: flex;
     justify-content: space-between !important;
+  }
+}
+
+.header-top {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 0;
+    padding-right: 115px;
+  }
+
+  li {
+    a {
+      color: $color_black;
+      border-left: solid $color_gray 1px;
+      padding: 0 5px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    input {
+      border: 0;
+    }
+  }
+
+  li:first-child a {
+    border: 0;
+  }
+
+  .search {
+    display: flex;
+    position: relative;
+    width: 75px;
+
+    i {
+      position: absolute;
+      top: 4px;
+      right: 0;
+    }
+  }
+}
+
+.header-bottom {
+  ul {
+    display: flex;
+  }
+
+  li {
+    color: $color_gray;
   }
 }

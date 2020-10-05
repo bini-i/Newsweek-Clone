@@ -4,6 +4,16 @@ body {
   background-color: $color_gray_l;
 }
 
+ul,
+li {
+  display: block;
+  list-style: none;
+}
+
+a {
+  font-family: $font1;
+}
+
 .container {
   padding: 0 !important;
 
@@ -12,17 +22,17 @@ body {
   }
 
   @include breakpoint($lg_screen) {
-    width: 100% !important;
+    max-width: 100% !important;
     padding: 0 !important;
   }
 
-  @include breakpoint($sm_screen) {
-    width: 100% !important;
+  @include breakpoint($md_screen) {
+    max-width: 100% !important;
     padding: 0 !important;
   }
 
   @include breakpoint($xs_screen) {
-    width: 100% !important;
+    max-width: 100% !important;
     padding: 0 !important;
   }
 }

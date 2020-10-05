@@ -3,22 +3,30 @@ body {
   padding: 0;
   background-color: #f4f5f6; }
 
+ul,
+li {
+  display: block;
+  list-style: none; }
+
+a {
+  font-family: "Roboto Condensed", sans-serif; }
+
 .container {
   padding: 0 !important; }
   @media (min-width: 992px) {
     .container {
       max-width: 1310px !important; } }
-  @media (max-width: 991px) {
+  @media (min-width: 768px) and (max-width: 991px) {
     .container {
-      width: 100% !important;
+      max-width: 100% !important;
       padding: 0 !important; } }
-  @media (max-width: 576px) {
+  @media (max-width: 767px) {
     .container {
-      width: 100% !important;
+      max-width: 100% !important;
       padding: 0 !important; } }
   @media (max-width: 420px) {
     .container {
-      width: 100% !important;
+      max-width: 100% !important;
       padding: 0 !important; } }
 
 .navbar {
@@ -38,8 +46,19 @@ body {
     justify-content: center;
     align-items: center;
     color: #9a9a9a; }
+  .navbar .login {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 20px; }
+    @media (max-width: 767px) {
+      .navbar .login {
+        display: none; } }
   .navbar .user {
     color: #f4f5f6; }
+    @media (min-width: 768px) {
+      .navbar .user {
+        display: none; } }
   @media (min-width: 992px) {
     .navbar .links {
       display: flex;
@@ -68,5 +87,34 @@ body {
     .navbar {
       display: flex;
       justify-content: space-between !important; } }
+
+.header-top ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 0;
+  padding-right: 115px; }
+.header-top li a {
+  color: black;
+  border-left: solid #9a9a9a 1px;
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 600; }
+.header-top li input {
+  border: 0; }
+.header-top li:first-child a {
+  border: 0; }
+.header-top .search {
+  display: flex;
+  position: relative;
+  width: 75px; }
+  .header-top .search i {
+    position: absolute;
+    top: 4px;
+    right: 0; }
+
+.header-bottom ul {
+  display: flex; }
+.header-bottom li {
+  color: #9a9a9a; }
 
 /*# sourceMappingURL=style.css.map */
