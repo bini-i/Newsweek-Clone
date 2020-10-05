@@ -78,20 +78,34 @@
 }
 
 .header-top {
+  @include breakpoint($lg_screen) {
+      display: none;
+  }
+  @include breakpoint($md_screen) {
+      display: none;
+  }
   ul {
     display: flex;
     justify-content: space-between;
     padding: 15px 0 0;
-    padding-right: 115px;
+    padding-right: 100px;
   }
 
   li {
+    border-left: solid $color_gray 1px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
     a {
       color: $color_black;
-      border-left: solid $color_gray 1px;
-      padding: 0 5px;
-      font-size: 16px;
-      font-weight: 600;
+      padding: 0 10px;
+      font-size: 19px;
+      font-weight: 800;
+
+      &:hover{
+        text-decoration: none;
+        color: $color_red;
+      }
     }
 
     input {
@@ -99,29 +113,50 @@
     }
   }
 
-  li:first-child a {
+  li:first-child {
     border: 0;
   }
 
   .search {
     display: flex;
     position: relative;
-    width: 75px;
-
+    border-right: 0;
+    input {
+      width: 70px;
+    }
     i {
       position: absolute;
-      top: 4px;
+      top: 6px;
       right: 0;
     }
   }
 }
 
 .header-bottom {
+  @include breakpoint($lg_screen) {
+      display: none;
+  }
+  @include breakpoint($md_screen) {
+      display: none;
+  }
   ul {
-    display: flex;
+    margin: 0;
+    padding: 10px 20px;
   }
 
   li {
     color: $color_gray;
+    margin-right: 20px;
+    padding-left: 0;
+    a {
+      color: $color_gray;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      &:hover{
+        text-decoration: none;
+        color: $color_red;
+      }
+    }
   }
 }

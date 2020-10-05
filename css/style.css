@@ -8,8 +8,21 @@ li {
   display: block;
   list-style: none; }
 
+input {
+  outline: none; }
+
 a {
-  font-family: "Roboto Condensed", sans-serif; }
+  font-family: "Roboto Condensed", sans-serif;
+  cursor: pointer; }
+
+.line {
+  border-bottom: 2px solid #e7e7e7; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .line {
+      display: none; } }
+  @media (max-width: 767px) {
+    .line {
+      display: none; } }
 
 .container {
   padding: 0 !important; }
@@ -28,6 +41,12 @@ a {
     .container {
       max-width: 100% !important;
       padding: 0 !important; } }
+
+.row {
+  border: 1px solid blue; }
+  .row div {
+    height: 100px;
+    border: 1px solid red; }
 
 .navbar {
   background-color: #f72210;
@@ -88,33 +107,64 @@ a {
       display: flex;
       justify-content: space-between !important; } }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-top {
+    display: none; } }
+@media (max-width: 767px) {
+  .header-top {
+    display: none; } }
 .header-top ul {
   display: flex;
   justify-content: space-between;
   padding: 15px 0 0;
-  padding-right: 115px; }
-.header-top li a {
-  color: black;
+  padding-right: 100px; }
+.header-top li {
   border-left: solid #9a9a9a 1px;
-  padding: 0 5px;
-  font-size: 16px;
-  font-weight: 600; }
-.header-top li input {
-  border: 0; }
-.header-top li:first-child a {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center; }
+  .header-top li a {
+    color: black;
+    padding: 0 10px;
+    font-size: 19px;
+    font-weight: 800; }
+    .header-top li a:hover {
+      text-decoration: none;
+      color: #f72210; }
+  .header-top li input {
+    border: 0; }
+.header-top li:first-child {
   border: 0; }
 .header-top .search {
   display: flex;
   position: relative;
-  width: 75px; }
+  border-right: 0; }
+  .header-top .search input {
+    width: 70px; }
   .header-top .search i {
     position: absolute;
-    top: 4px;
+    top: 6px;
     right: 0; }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-bottom {
+    display: none; } }
+@media (max-width: 767px) {
+  .header-bottom {
+    display: none; } }
 .header-bottom ul {
-  display: flex; }
+  margin: 0;
+  padding: 10px 20px; }
 .header-bottom li {
-  color: #9a9a9a; }
+  color: #9a9a9a;
+  margin-right: 20px;
+  padding-left: 0; }
+  .header-bottom li a {
+    color: #9a9a9a;
+    text-transform: uppercase;
+    font-weight: 600; }
+    .header-bottom li a:hover {
+      text-decoration: none;
+      color: #f72210; }
 
 /*# sourceMappingURL=style.css.map */

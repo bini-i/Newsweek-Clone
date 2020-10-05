@@ -10,10 +10,23 @@ li {
   list-style: none;
 }
 
-a {
-  font-family: $font1;
+input {
+  outline: none;
 }
 
+a {
+  font-family: $font1;
+  cursor: pointer;
+}
+.line {
+  border-bottom: 2px solid lighten($color_gray, 30%);
+  @include breakpoint($lg_screen) {
+    display: none;
+  }
+  @include breakpoint($md_screen) {
+    display: none;
+  }
+}
 .container {
   padding: 0 !important;
 
@@ -34,5 +47,12 @@ a {
   @include breakpoint($xs_screen) {
     max-width: 100% !important;
     padding: 0 !important;
+  }
+}
+.row {
+  border: 1px solid blue;
+  div {
+    height: 100px;
+    border: 1px solid red;
   }
 }
