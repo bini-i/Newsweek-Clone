@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color_gray_l;
+}
+
+.container {
+  padding: 0 !important;
+
+  @include breakpoint($xl_screen) {
+    max-width: 1310px !important;
+  }
+
+  @include breakpoint($lg_screen) {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  @include breakpoint($sm_screen) {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  @include breakpoint($xs_screen) {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+}

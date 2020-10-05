@@ -1,0 +1,68 @@
+.navbar {
+  background-color: $color_red;
+  padding: 10px 20px !important;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+
+  .logo {
+    height: 30px;
+
+    @include breakpoint($xl_screen) {
+      height: 60px;
+    }
+  }
+
+  .navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color_gray;
+  }
+
+  .user {
+    color: $color_gray_l;
+  }
+
+  .links {
+    @include breakpoint($xl_screen) {
+      display: flex;
+      margin-bottom: -40px;
+    }
+  }
+
+  .date {
+    display: none;
+    position: relative;
+
+    span {
+      color: $color_white;
+    }
+
+    @include breakpoint($xl_screen) {
+      display: flex;
+      margin-bottom: -40px;
+    }
+  }
+
+  .subscribe-container {
+    color: $color_black;
+    background-color: $color_yellow;
+    padding: 3px 12px;
+    border-radius: 24px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    i {
+      font-size: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  @include breakpoint($xl_screen) {
+    display: flex;
+    justify-content: space-between !important;
+  }
+}

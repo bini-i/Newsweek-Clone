@@ -7,5 +7,11 @@ sites/site*/public/admin/
 sites/site*/public/setup/
 sites/site*/public/theme/
 textpattern/
+.sass-cache/
+node_modules/
 HISTORY.txt
 README.txt
+
+sass.sh
+package.json
+package-lock.json
