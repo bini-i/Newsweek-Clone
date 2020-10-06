@@ -351,4 +351,62 @@ html {
 .the-debate .opinion .debate-item {
   border-bottom: solid #9a9a9a 1px; }
 
+.row-article-container .row-article-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .row-article-container .row-article-item .article-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; }
+    .row-article-container .row-article-item .article-image .catagory {
+      position: absolute;
+      bottom: 0;
+      background: #fff;
+      color: #186dff;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 8px 15px 9px;
+      border-bottom: 1px solid #cecece; }
+    .row-article-container .row-article-item .article-image a {
+      display: block; }
+    .row-article-container .row-article-item .article-image img {
+      width: 100%; }
+  .row-article-container .row-article-item .info {
+    padding: 10px;
+    border-bottom: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-right: 1px solid #cecece; }
+  .row-article-container .row-article-item h5 {
+    margin: 7px 0; }
+    .row-article-container .row-article-item h5 a {
+      color: black;
+      font-size: 24px; }
+  .row-article-container .row-article-item p {
+    font-family: arial, helvetica, sans-serif; }
+.row-article-container .signup {
+  padding: 30px 20px;
+  background-color: #f4f5f6; }
+  .row-article-container .signup .logo {
+    height: 35px; }
+  .row-article-container .signup .title {
+    font-size: 15px;
+    margin-left: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700; }
+  .row-article-container .signup .emailtext {
+    padding: 5px 10px;
+    width: 100%;
+    border: 1px solid #9a9a9a;
+    color: #9a9a9a; }
+  .row-article-container .signup .signupbtn {
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    width: 100%;
+    background-color: #f72210;
+    border: 0;
+    padding: 5px 0;
+    border-radius: 10px; }
+
 /*# sourceMappingURL=style.css.map */
