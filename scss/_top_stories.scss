@@ -19,11 +19,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       .article-image {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+
         .catagory {
           position: absolute;
           bottom: 0;
@@ -33,20 +35,25 @@
           font-weight: 700;
           padding: 8px 15px 9px;
         }
+
         a {
           display: block;
         }
+
         img {
           width: 100%;
         }
       }
+
       h5 {
         margin: 7px 0;
+
         a {
           color: $color_black;
           font-size: 24px;
         }
       }
+
       p {
         font-family: $font2;
       }
@@ -85,6 +92,31 @@
           text-transform: uppercase;
           background-color: $color_gray;
         }
+      }
+    }
+  }
+
+  .more-stories {
+    .story-item {
+      border-top: solid 1px $color_gray;
+      padding: 0.9rem 0;
+
+      .story-img {
+        width: 95px;
+        height: 95px;
+      }
+
+      .story-title {
+        line-height: 1.1;
+        font-size: 1.1rem;
+        color: $color_black;
+      }
+
+      .detail {
+        line-height: 1.2;
+        font-size: 0.95rem;
+        font-weight: 400;
+        font-family: arial, sans-serif;
       }
     }
   }

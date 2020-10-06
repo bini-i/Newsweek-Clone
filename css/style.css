@@ -289,5 +289,66 @@ html {
           font-size: 12px;
           text-transform: uppercase;
           background-color: #9a9a9a; }
+  .top-stories .more-stories .story-item {
+    border-top: solid 1px #9a9a9a;
+    padding: 0.9rem 0; }
+    .top-stories .more-stories .story-item .story-img {
+      width: 95px;
+      height: 95px; }
+    .top-stories .more-stories .story-item .story-title {
+      line-height: 1.1;
+      font-size: 1.1rem;
+      color: black; }
+    .top-stories .more-stories .story-item .detail {
+      line-height: 1.2;
+      font-size: 0.95rem;
+      font-weight: 400;
+      font-family: arial, sans-serif; }
+
+.the-debate .debate-sec {
+  color: #9a9a9a;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif; }
+.the-debate .debates {
+  border-top: solid 4px #9a9a9a;
+  border-bottom: solid 4px #9a9a9a; }
+.the-debate .debate-item .debater-img {
+  width: 63px;
+  height: 63px; }
+.the-debate .debate-item .details .title {
+  color: black;
+  font-size: 1.1rem;
+  font-family: "Roboto Condensed", sans-serif; }
+.the-debate .debate-item .details .name {
+  text-transform: uppercase;
+  color: #9a9a9a;
+  font-size: 0.9rem;
+  font-family: "Roboto Condensed", sans-serif; }
+.the-debate .divider {
+  position: relative; }
+  .the-debate .divider::after, .the-debate .divider::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    content: "";
+    height: 1px;
+    background: #9a9a9a;
+    z-index: -1; }
+  .the-debate .divider::before {
+    top: 14px; }
+  .the-debate .divider::after {
+    top: 16px; }
+  .the-debate .divider .vs {
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    background: black;
+    color: #f4f5f6;
+    font-family: "Roboto Condensed", sans-serif;
+    display: grid;
+    place-items: center; }
+.the-debate .opinion .debate-item {
+  border-bottom: solid #9a9a9a 1px; }
 
 /*# sourceMappingURL=style.css.map */
