@@ -544,9 +544,8 @@ body {
       height: 80px; }
 
 .subscribe-sec {
-  height: 320px;
   font-family: "Roboto Condensed", sans-serif;
-  margin-bottom: 25px; }
+  border-bottom: solid 1px #9a9a9a; }
   .subscribe-sec h5 {
     font-size: 16px;
     padding-bottom: 11px;
@@ -571,7 +570,7 @@ body {
     cursor: pointer; }
   .subscribe-sec .subscribe {
     position: relative;
-    height: 100%;
+    height: 320px;
     background: #f4f5f6; }
     .subscribe-sec .subscribe .left {
       position: relative;
@@ -585,7 +584,7 @@ body {
         top: -100px;
         left: 80px; }
   .subscribe-sec .newsletter {
-    height: 100%;
+    height: 320px;
     border: solid 1px #f4f5f6; }
     .subscribe-sec .newsletter .cover {
       background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5");
@@ -600,5 +599,45 @@ body {
     .subscribe-sec .newsletter button,
     .subscribe-sec .newsletter input {
       width: 100%; }
+
+footer {
+  padding: 30px 10px; }
+  footer .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #9a9a9a; }
+    footer .top .left {
+      display: flex;
+      align-items: flex-end; }
+      footer .top .left p {
+        margin-bottom: 0;
+        font-size: 12px; }
+    footer .top img {
+      width: 200px; }
+    footer .top .social {
+      display: flex;
+      align-items: baseline; }
+      footer .top .social i {
+        font-size: 25px;
+        color: #9a9a9a;
+        margin-right: 15px; }
+  footer .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #9a9a9a;
+    font-family: arial, sans-serif; }
+  footer .lang,
+  footer .nav {
+    margin-bottom: 6px;
+    padding-left: 0; }
+    footer .lang li,
+    footer .nav li {
+      font-size: 12px;
+      float: left;
+      padding-right: 7px;
+      margin-right: 7px;
+      border-right: solid 1px #9a9a9a; }
 
 /*# sourceMappingURL=style.css.map */

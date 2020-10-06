@@ -1,7 +1,6 @@
 .subscribe-sec {
-  height: 320px;
   font-family: $font1;
-  margin-bottom: 25px;
+  border-bottom: solid 1px $color_gray;
 
   h5 {
     font-size: 16px;
@@ -35,7 +34,7 @@
 
   .subscribe {
     position: relative;
-    height: 100%;
+    height: 320px;
     background: $color_gray_l;
 
     .left {
@@ -57,7 +56,7 @@
   }
 
   .newsletter {
-    height: 100%;
+    height: 320px;
     border: solid 1px $color_gray_l;
 
     .cover {
