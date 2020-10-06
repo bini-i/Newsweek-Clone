@@ -20,6 +20,7 @@ a {
 }
 .line {
   border-bottom: 2px solid lighten($color_gray, 30%);
+  width: 100%;
   @include breakpoint($lg_screen) {
     display: none;
   }
@@ -49,10 +50,7 @@ a {
     padding: 0 !important;
   }
 }
-// .row {
-//   border: 1px solid blue;
-//   div {
-//     height: 100px;
-//     border: 1px solid red;
-//   }
-// }
+
+main {
+  padding: 0 30px;
+}

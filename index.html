@@ -1,172 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Newsweek-Clone</title>
+    <link
+      rel="icon"
+      href="https://g.newsweek.com/themes/newsweek/favicons/apple-touch-icon.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome script -->
+    <script
+      src="https://kit.fontawesome.com/2bce053742.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Newsweek-Clone</title>
-  <link rel="icon" href="https://g.newsweek.com/themes/newsweek/favicons/apple-touch-icon.png" />
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-  <!-- fontawesome script -->
-  <script src="https://kit.fontawesome.com/2bce053742.js" crossorigin="anonymous"></script>
-</head>
-
-<body class="bootstrap-override">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg">
-      <div class="banner">
-        <div class="date">
-          <span>Mon, Oct 05, 2020</span>
-        </div>
-        <div class="d-flex">
-          <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.svg" alt="logo" /></a>
-        </div>
-        <div class="d-flex align-items-center links">
-          <a class="login" href="#">LOGIN</a>
-          <a href="" class="mr-3 user"><i class="fas fa-user"></i></a>
-          <a href="" class="d-flex align-items-center subscribe-container">
-            Subscription offers
-            <i class="fas fa-chevron-right"></i>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-          </button>
-        </div>
-      </div>
-      <div class="header-top">
-        <ul>
-          <li class="nav-item">
-            <a class="nav-link" href="#">U.S.</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">World</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Business</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tech&nbsp;&&nbsp;Science</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Culture</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Newsgeek</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Health</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">The&nbsp;Debate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vantage</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Weather</a>
-          </li>
-          <li class="search nav-item">
-            <input type="text" placeholder="Search" name="a" value="" />
-            <i class="fas fa-search"></i>
-          </li>
-        </ul>
-      </div>
-      <div class="line"></div>
-      <div class="header-bottom">
-        <ul class="d-flex">
-          <li><a href="#" class="text-dark active">Trending</a></li>
-          <li><a href="#">Donald Trump</a></li>
-          <li><a href="#">Joe Biden</a></li>
-          <li><a href="#">Stimulus Package</a></li>
-          <li><a href="#">Coronavirus</a></li>
-          <li><a href="#">2020 Election</a></li>
-        </ul>
-      </div>
-      <div class="line"></div>
-    </nav>
-
-    <main class="row">
-      <div class="col-lg-4">
-        <div class="featured-stories">
-          <h6 class="my-2">FEATURED STORIES</h6>
-          <div class="article-container">
-            <article class="article-item pb-3">
-              <div class="article-image">
-                <a href="#">
-                  <img src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81" alt="Walter Reed Medical Center, Trump COVID-19 update">
-                </a>
-                <span class="catagory">NEWS</span>
-              </div>
-              <a href="#"></a>
-              <h5>
-                <a href="#">Trump COVID Update—What Doctors Have Said About President's Illness</a>
-              </h5>
-              <p>Dr. Sean Conley, the president's physician, said he had been concerned about "possible rapid progression of the illness," following two developments on Friday.</p>
-
-            </article>
-            <article class="article-item pb-3">
-              <div class="article-image">
-                <a href="#">
-                  <img src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81" alt="Walter Reed Medical Center, Trump COVID-19 update">
-                </a>
-                <span class="catagory">NEWS</span>
-              </div>
-              <a href="#"></a>
-              <h5>
-                <a href="#">Trump COVID Update—What Doctors Have Said About President's Illness</a>
-              </h5>
-              <p>Dr. Sean Conley, the president's physician, said he had been concerned about "possible rapid progression of the illness," following two developments on Friday.</p>
-
-            </article>
-            <article class="article-item pb-3">
-              <div class="article-image">
-                <a href="#">
-                  <img src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81" alt="Walter Reed Medical Center, Trump COVID-19 update">
-                </a>
-                <span class="catagory">NEWS</span>
-              </div>
-              <a href="#"></a>
-              <h5>
-                <a href="#">Trump COVID Update—What Doctors Have Said About President's Illness</a>
-              </h5>
-              <p>Dr. Sean Conley, the president's physician, said he had been concerned about "possible rapid progression of the illness," following two developments on Friday.</p>
-
-            </article>
-            <article class="article-item pb-3">
-              <div class="article-image">
-                <a href="#">
-                  <img src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81" alt="Walter Reed Medical Center, Trump COVID-19 update">
-                </a>
-                <span class="catagory">NEWS</span>
-              </div>
-              <a href="#"></a>
-              <h5>
-                <a href="#">Trump COVID Update—What Doctors Have Said About President's Illness</a>
-              </h5>
-              <p>Dr. Sean Conley, the president's physician, said he had been concerned about "possible rapid progression of the illness," following two developments on Friday.</p>
-
-            </article>
+  <body class="bootstrap-override">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="banner">
+          <div class="date">
+            <span>Mon, Oct 05, 2020</span>
+          </div>
+          <div class="d-flex">
+            <a class="navbar-brand" href="#"
+              ><img class="logo" src="./img/logo.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="d-flex align-items-center links">
+            <a class="login" href="#">LOGIN</a>
+            <a href="" class="mr-3 user"><i class="fas fa-user"></i></a>
+            <a href="" class="d-flex align-items-center subscribe-container">
+              Subscription offers
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fas fa-bars"></i
+              ></span>
+            </button>
           </div>
         </div>
+        <div class="header-top">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">U.S.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tech&nbsp;&&nbsp;Science</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Newsgeek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">The&nbsp;Debate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vantage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Weather</a>
+            </li>
+            <li class="search nav-item">
+              <input type="text" placeholder="Search" name="a" value="" />
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <div class="header-bottom">
+          <ul class="d-flex">
+            <li><a href="#" class="text-dark active">Trending</a></li>
+            <li><a href="#">Donald Trump</a></li>
+            <li><a href="#">Joe Biden</a></li>
+            <li><a href="#">Stimulus Package</a></li>
+            <li><a href="#">Coronavirus</a></li>
+            <li><a href="#">2020 Election</a></li>
+          </ul>
+        </div>
+        <div class="line"></div>
+      </nav>
 
-      </div>
-      <div class="col-lg-4 top-stories">
-
-      </div>
-      <div class="col-lg-4 the-debate">
-
-      </div>
-    </main>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
-
+      <main class="row">
+        <div class="col-lg-3 px-0">
+          <div class="featured-stories">
+            <h6 class="my-2">FEATURED STORIES</h6>
+            <div class="article-container">
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 px-0">
+          <div class="top-stories">
+            <h6 class="my-2">TOP STORIES</h6>
+            <div class="article-container">
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+            </div>
+            <h6 class="my-2">MY TURN</h6>
+            <div class="my-turns d-flex">
+              <article class="turn-item">
+                <img
+                  class="mb-3"
+                  src="https://d.newsweek.com/en/full/1644704/almeda-drive-fire-oregon-fires-wildfires.webp?w=397&h=397&f=81c86ed4c45ea10e393c52cd0d24d650"
+                  alt=""
+                />
+                <a href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+              <article class="turn-item">
+                <img
+                  class="mb-3"
+                  src="https://d.newsweek.com/en/full/1644704/almeda-drive-fire-oregon-fires-wildfires.webp?w=397&h=397&f=81c86ed4c45ea10e393c52cd0d24d650"
+                  alt=""
+                />
+                <a href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+              <article class="turn-item">
+                <img
+                  class="mb-3"
+                  src="https://d.newsweek.com/en/full/1644704/almeda-drive-fire-oregon-fires-wildfires.webp?w=397&h=397&f=81c86ed4c45ea10e393c52cd0d24d650"
+                  alt=""
+                />
+                <a href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+            </div>
+            <h6 class="my-2">CULTURE & TRAVEL</h6>
+            <div class="my-turns d-flex">
+              <article class="turn-item">
+                <div class="image mb-3">
+                  <img src="https://d.newsweek.com/en/full/1645381/100-best-rock-albums-all-time-according-critics.webp?w=397&h=397&f=4fac5a43a9d8890fa4ae6281e59ace15" alt="">
+                  <span class="category">MUSIC</span>
+                </div>
+                <a href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+              <article class="turn-item">
+                <div class="image mb-3">
+                  <img src="https://d.newsweek.com/en/full/1645381/100-best-rock-albums-all-time-according-critics.webp?w=397&h=397&f=4fac5a43a9d8890fa4ae6281e59ace15" alt="">
+                  <span class="category">MUSIC</span>
+                </div>
+                <a href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+              <article class="turn-item">
+                <div class="image mb-3">
+                  <img src="https://d.newsweek.com/en/full/1645381/100-best-rock-albums-all-time-according-critics.webp?w=397&h=397&f=4fac5a43a9d8890fa4ae6281e59ace15" alt="">
+                  <span class="category">MUSIC</span>
+                </div>
+                <a href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 px-0 the-debate">
+          <div class="featured-stories">
+            <h6 class="my-2">FEATURED STORIES</h6>
+            <div class="article-container">
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
