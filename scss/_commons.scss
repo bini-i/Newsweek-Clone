@@ -1,4 +1,4 @@
-body {
+html body {
   margin: 0;
   padding: 0;
   background-color: $color_gray_l;
@@ -30,6 +30,7 @@ a {
 }
 .container {
   padding: 0 !important;
+  background-color: $color_white;
 
   @include breakpoint($xl_screen) {
     max-width: 1310px !important;

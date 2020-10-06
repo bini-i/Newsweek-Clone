@@ -1,4 +1,4 @@
-body {
+html body {
   margin: 0;
   padding: 0;
   background-color: #f4f5f6; }
@@ -26,7 +26,8 @@ a {
       display: none; } }
 
 .container {
-  padding: 0 !important; }
+  padding: 0 !important;
+  background-color: #fff; }
   @media (min-width: 992px) {
     .container {
       max-width: 1310px !important; } }
@@ -489,5 +490,55 @@ html {
       color: #f72210; }
     .in-magazine .content .item .detail {
       font-size: 20px; }
+
+body {
+  background-color: red; }
+
+.other_news .us_section {
+  border-bottom: 1px solid #cecece;
+  padding: 0;
+  flex-direction: column; }
+  .other_news .us_section h2 {
+    font-size: 26px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #f72210; }
+  .other_news .us_section .article-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .other_news .us_section .article-item .article-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative; }
+      .other_news .us_section .article-item .article-image .catagory {
+        position: absolute;
+        bottom: 0;
+        background: #fff;
+        color: #f72210;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 8px 15px 9px; }
+      .other_news .us_section .article-item .article-image a {
+        display: block; }
+      .other_news .us_section .article-item .article-image img {
+        width: 100%; }
+    .other_news .us_section .article-item h5 {
+      margin: 7px 0; }
+      .other_news .us_section .article-item h5 a {
+        color: black;
+        font-size: 20px; }
+    .other_news .us_section .article-item p {
+      font-size: 1em;
+      font-family: arial, helvetica, sans-serif; }
+  .other_news .us_section .aside-items {
+    padding: 0 20px; }
+    .other_news .us_section .aside-items h2 {
+      font-size: 16px;
+      color: black;
+      font-family: "Roboto Condensed", sans-serif; }
+    .other_news .us_section .aside-items img {
+      height: 80px; }
 
 /*# sourceMappingURL=style.css.map */
