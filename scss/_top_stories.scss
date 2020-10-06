@@ -43,7 +43,7 @@
         }
       }
 
-      h5 {
+      .article-item-link {
         margin: 7px 0;
 
         a {
@@ -64,11 +64,11 @@
     .turn-item {
       padding: 0.5rem;
 
-      img {
+      .article-item-image {
         width: 100%;
       }
 
-      a {
+      .article-item-link {
         color: $color_gray;
 
         h5 {

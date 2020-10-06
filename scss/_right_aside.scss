@@ -111,14 +111,14 @@
       border-bottom: 1px solid $color_gray_1;
       border-left: 1px solid $color_gray_1;
       border-right: 1px solid $color_gray_1;
-    }
 
-    h5 {
-      margin: 7px 0;
+      h5 {
+        margin: 7px 0;
 
-      a {
-        color: $color_black;
-        font-size: 24px;
+        a {
+          color: $color_black;
+          font-size: 24px;
+        }
       }
     }
 
@@ -135,7 +135,7 @@
       height: 35px;
     }
 
-    .title {
+    .signup-title {
       font-size: 15px;
       margin-left: 10px;
       font-family: $font1;

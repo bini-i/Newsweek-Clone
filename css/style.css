@@ -260,9 +260,9 @@ html {
         display: block; }
       .top-stories .article-container .article-item .article-image img {
         width: 100%; }
-    .top-stories .article-container .article-item h5 {
+    .top-stories .article-container .article-item .article-item-link {
       margin: 7px 0; }
-      .top-stories .article-container .article-item h5 a {
+      .top-stories .article-container .article-item .article-item-link a {
         color: black;
         font-size: 24px; }
     .top-stories .article-container .article-item p {
@@ -271,11 +271,11 @@ html {
     width: 100%; }
     .top-stories .my-turns .turn-item {
       padding: 0.5rem; }
-      .top-stories .my-turns .turn-item img {
+      .top-stories .my-turns .turn-item .article-item-image {
         width: 100%; }
-      .top-stories .my-turns .turn-item a {
+      .top-stories .my-turns .turn-item .article-item-link {
         color: #9a9a9a; }
-        .top-stories .my-turns .turn-item a h5 {
+        .top-stories .my-turns .turn-item .article-item-link h5 {
           font-size: 16px; }
       .top-stories .my-turns .turn-item .image {
         position: relative;
@@ -378,11 +378,11 @@ html {
     border-bottom: 1px solid #cecece;
     border-left: 1px solid #cecece;
     border-right: 1px solid #cecece; }
-  .row-article-container .row-article-item h5 {
-    margin: 7px 0; }
-    .row-article-container .row-article-item h5 a {
-      color: black;
-      font-size: 24px; }
+    .row-article-container .row-article-item .info h5 {
+      margin: 7px 0; }
+      .row-article-container .row-article-item .info h5 a {
+        color: black;
+        font-size: 24px; }
   .row-article-container .row-article-item p {
     font-family: arial, helvetica, sans-serif; }
 .row-article-container .signup {
@@ -390,7 +390,7 @@ html {
   background-color: #f4f5f6; }
   .row-article-container .signup .logo {
     height: 35px; }
-  .row-article-container .signup .title {
+  .row-article-container .signup .signup-title {
     font-size: 15px;
     margin-left: 10px;
     font-family: "Roboto Condensed", sans-serif;
@@ -526,9 +526,9 @@ body {
         display: block; }
       .other_news .us_section .article-item .article-image img {
         width: 100%; }
-    .other_news .us_section .article-item h5 {
+    .other_news .us_section .article-item .news_title {
       margin: 7px 0; }
-      .other_news .us_section .article-item h5 a {
+      .other_news .us_section .article-item .news_title a {
         color: black;
         font-size: 20px; }
     .other_news .us_section .article-item p {
@@ -540,7 +540,7 @@ body {
       font-size: 16px;
       color: black;
       font-family: "Roboto Condensed", sans-serif; }
-    .other_news .us_section .aside-items img {
+    .other_news .us_section .aside-items .aside-item-image {
       height: 80px; }
 
 .subscribe-sec {
