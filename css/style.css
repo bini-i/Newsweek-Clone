@@ -453,4 +453,41 @@ html {
       font-size: 1em;
       font-family: arial, helvetica, sans-serif; }
 
+.in-magazine .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px #9a9a9a;
+  padding: 8px;
+  margin-bottom: 15px; }
+  .in-magazine .head .icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    background: url("https://g.newsweek.com/www/images/logo-n1.svg") #f72210; }
+  .in-magazine .head .title {
+    font-size: 19px;
+    color: black;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0; }
+.in-magazine .content {
+  font-family: "Roboto Condensed", sans-serif; }
+  .in-magazine .content .item {
+    width: 24%;
+    margin-bottom: 150px; }
+    .in-magazine .content .item .item-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .in-magazine .content .item .type {
+      background: #f72210;
+      color: #fff;
+      padding: 0 7px;
+      margin-right: 7px; }
+    .in-magazine .content .item .catagory {
+      color: #f72210; }
+    .in-magazine .content .item .detail {
+      font-size: 20px; }
+
 /*# sourceMappingURL=style.css.map */

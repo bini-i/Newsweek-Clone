@@ -1,0 +1,55 @@
+.in-magazine {
+  .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px $color_gray;
+    padding: 8px;
+    margin-bottom: 15px;
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+      background: url("https://g.newsweek.com/www/images/logo-n1.svg") $color_red;
+    }
+
+    .title {
+      font-size: 19px;
+      color: $color_black;
+      font-family: $font1;
+      margin: 0;
+    }
+  }
+
+  .content {
+    font-family: $font1;
+
+    .item {
+      width: 24%;
+      margin-bottom: 150px;
+
+      .item-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .type {
+        background: $color_red;
+        color: $color_white;
+        padding: 0 7px;
+        margin-right: 7px;
+      }
+
+      .catagory {
+        color: $color_red;
+      }
+
+      .detail {
+        font-size: 20px;
+      }
+    }
+  }
+}
