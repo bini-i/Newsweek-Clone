@@ -24,8 +24,10 @@ html {
   @include breakpoint($md_screen) {
     height: 50px;
   }
+
   .logo {
     height: 20px;
+
     @include breakpoint($xl_screen) {
       height: 60px;
     }
@@ -43,6 +45,7 @@ html {
     font-size: 18px;
     font-weight: 700;
     margin-right: 20px;
+
     @include breakpoint($md_screen) {
       display: none;
     }
@@ -50,6 +53,7 @@ html {
 
   .user {
     color: $color_gray_l;
+
     @include breakpoint($ol_screen) {
       display: none;
     }
@@ -69,6 +73,7 @@ html {
     span {
       color: $color_white;
     }
+
     @include breakpoint($xl_screen) {
       display: flex;
       margin-bottom: -40px;
@@ -84,6 +89,7 @@ html {
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
+
     @include breakpoint($ol_screen) {
       font-size: 18px;
     }
@@ -93,6 +99,7 @@ html {
       margin-left: 5px;
     }
   }
+
   @include breakpoint($xl_screen) {
     display: flex;
     justify-content: space-between;
@@ -103,6 +110,7 @@ html {
   @include breakpoint($lg_screen) {
     display: none;
   }
+
   @include breakpoint($md_screen) {
     display: none;
   }
@@ -161,9 +169,11 @@ html {
 
 .header-bottom {
   width: 100%;
+
   @include breakpoint($lg_screen) {
     display: none;
   }
+
   @include breakpoint($md_screen) {
     display: none;
   }
@@ -172,7 +182,7 @@ html {
     margin: 0;
     padding: 10px 20px;
 
-    li {
+    .li-link {
       color: $color_gray;
       margin-right: 20px;
       padding-left: 0;

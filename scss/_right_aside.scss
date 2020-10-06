@@ -66,6 +66,7 @@
       place-items: center;
     }
   }
+
   .opinion {
     .debate-item {
       border-bottom: solid $color_gray 1px;
@@ -78,11 +79,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     .article-image {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       position: relative;
+
       .catagory {
         position: absolute;
         bottom: 0;
@@ -97,32 +100,38 @@
       a {
         display: block;
       }
+
       img {
         width: 100%;
       }
     }
+
     .info {
       padding: 10px;
       border-bottom: 1px solid $color_gray_1;
       border-left: 1px solid $color_gray_1;
       border-right: 1px solid $color_gray_1;
     }
+
     h5 {
       margin: 7px 0;
+
       a {
         color: $color_black;
         font-size: 24px;
       }
     }
+
     p {
       font-family: $font2;
     }
   }
+
   .signup {
     padding: 30px 20px;
     background-color: $color_gray_l;
-    
-    .logo{
+
+    .logo {
       height: 35px;
     }
 
@@ -132,6 +141,7 @@
       font-family: $font1;
       font-weight: 700;
     }
+
     .emailtext {
       padding: 5px 10px;
       width: 100%;

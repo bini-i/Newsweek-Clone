@@ -1,5 +1,6 @@
 .editor_picks {
   border-bottom: 1px solid $color_gray_1;
+
   // border: 1px solid red;
   .header {
     justify-content: center;
@@ -8,6 +9,7 @@
 
     > div {
       align-items: center;
+
       img {
         height: 28px;
       }
@@ -25,11 +27,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       .article-image {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+
         .catagory {
           position: absolute;
           bottom: 0;
@@ -39,20 +43,25 @@
           font-weight: 700;
           padding: 8px 15px 9px;
         }
+
         a {
           display: block;
         }
+
         img {
           width: 100%;
         }
       }
+
       h5 {
         margin: 7px 0;
-        a {
+
+        .title-link {
           color: $color_black;
           font-size: 20px;
         }
       }
+
       p {
         font-size: 1em;
         font-family: $font2;

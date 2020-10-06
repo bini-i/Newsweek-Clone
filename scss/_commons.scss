@@ -18,16 +18,20 @@ a {
   font-family: $font1;
   cursor: pointer;
 }
+
 .line {
   border-bottom: 2px solid lighten($color_gray, 30%);
   width: 100%;
+
   @include breakpoint($lg_screen) {
     display: none;
   }
+
   @include breakpoint($md_screen) {
     display: none;
   }
 }
+
 .container {
   padding: 0 !important;
   background-color: $color_white;
