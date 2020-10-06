@@ -11,85 +11,90 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
   <!-- fontawesome script -->
-  <!-- <script src="https://kit.fontawesome.com/2bce053742.js" crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/2bce053742.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bootstrap-override">
   <div class="container">
     <nav class="navbar navbar-expand-lg">
-      <div class="date">
-        <span>Mon, Oct 05, 2020</span>
+      <div class="banner">
+        <div class="date">
+          <span>Mon, Oct 05, 2020</span>
+        </div>
+        <div class="d-flex">
+          <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="d-flex align-items-center links">
+          <a class="login" href="#">LOGIN</a>
+          <a href="" class="mr-3 user"><i class="fas fa-user"></i></a>
+          <a href="" class="d-flex align-items-center subscribe-container">
+            Subscription offers
+            <i class="fas fa-chevron-right"></i>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+          </button>
+        </div>
       </div>
-      <div class="d-flex">
-        <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.svg" alt="logo" /></a>
+      <div class="header-top">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#">U.S.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">World</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tech&nbsp;&&nbsp;Science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Culture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Newsgeek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">The&nbsp;Debate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vantage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Weather</a>
+          </li>
+          <li class="search nav-item">
+            <input type="text" placeholder="Search" name="a" value="" />
+            <i class="fas fa-search"></i>
+          </li>
+        </ul>
       </div>
-      <div class="d-flex align-items-center links">
-        <a class="login" href="#">LOGIN</a>
-        <a href="" class="mr-3 user"><i class="fas fa-user"></i></a>
-        <a href="" class="d-flex align-items-center subscribe-container">Subscribe <i class="fas fa-chevron-right"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
+      <div class="line"></div>
+      <div class="header-bottom">
+        <ul class="d-flex">
+          <li><a href="#" class="text-dark active">Trending</a></li>
+          <li><a href="#">Donald Trump</a></li>
+          <li><a href="#">Joe Biden</a></li>
+          <li><a href="#">Stimulus Package</a></li>
+          <li><a href="#">Coronavirus</a></li>
+          <li><a href="#">2020 Election</a></li>
+        </ul>
       </div>
+      <div class="line"></div>
     </nav>
-    <div class="header-top">
-      <ul>
-        <li class="nav-item">
-          <a class="nav-link" href="#">U.S.</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">World</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Business</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tech&nbsp;&&nbsp;Science</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Culture</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Newsgeek</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sports</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Health</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">The&nbsp;Debate</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Vantage</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Weather</a>
-        </li>
-        <li class="search nav-item">
-          <input type="text" placeholder="Search" name="a" value="" />
-          <i class="fas fa-search"></i>
-        </li>
-      </ul>
-    </div>
-    <div class="line"></div>
-    <div class="header-bottom">
-      <ul class="d-flex">
-        <li><a href="#" class="text-dark active">Trending</a></li>
-        <li><a href="#">Donald Trump</a></li>
-        <li><a href="#">Joe Biden</a></li>
-        <li><a href="#">Stimulus Package</a></li>
-        <li><a href="#">Coronavirus</a></li>
-        <li><a href="#">2020 Election</a></li>
-      </ul>
-    </div>
-    <div class="line"></div>
 
     <main class="row">
       <div class="col-lg-4">
         <div class="featured-stories">
-          <h6  class="my-2">FEATURED STORIES</h6>
+          <h6 class="my-2">FEATURED STORIES</h6>
           <div class="article-container">
             <article class="article-item pb-3">
               <div class="article-image">
