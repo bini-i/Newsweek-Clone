@@ -26,14 +26,17 @@
     font-family: $font1;
 
     .item {
-      width: 24%;
-      margin-bottom: 150px;
+      width: 23%;
+      margin-bottom: 15px;
 
       .item-img {
         display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 290px;
+        }
       }
 
       .type {
@@ -49,6 +52,10 @@
 
       .detail {
         font-size: 20px;
+
+        a {
+          color: $color_black;
+        }
       }
     }
   }
