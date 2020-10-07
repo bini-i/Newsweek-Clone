@@ -4,7 +4,7 @@
 
 > Clone of the Newsweek webpage using bootstap
 
-![screenshot](app_screenshot.png)
+![screenshot](./assets/img/app_screenshot.png)
 
 This project is a clone of Newsweek webpage in the HTML/CSS module at Microverse
 It consists of building a responsive website using Bootstrap. We cloned The Newsweek home page with a responsive layout that changes at three breakpoints.
