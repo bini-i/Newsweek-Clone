@@ -32,6 +32,10 @@ html {
     @include breakpoint($xl_screen) {
       height: 60px;
     }
+
+    @include breakpoint($sm_screen) {
+      height: 12px;
+    }
   }
 
   .navbar-toggler-icon {
@@ -71,13 +75,17 @@ html {
     display: none;
     position: relative;
 
+    img {
+      width: 20px;
+    }
+
     span {
       color: $color_white;
     }
 
     @include breakpoint($xl_screen) {
       display: flex;
-      margin-bottom: -40px;
+      flex-direction: column;
     }
   }
 
@@ -90,6 +98,14 @@ html {
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
+
+    .offers {
+      display: none;
+
+      @include breakpoint($ol_screen) {
+        display: block;
+      }
+    }
 
     @include breakpoint($ol_screen) {
       font-size: 18px;

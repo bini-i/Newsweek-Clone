@@ -131,6 +131,8 @@
   .signup {
     padding: 30px 20px;
     background-color: $color_gray_l;
+    max-width: 300px;
+    margin: 0 auto;
 
     .logo {
       height: 35px;

@@ -12,6 +12,7 @@ node_modules/
 HISTORY.txt
 README.txt
 
+.prettierrc.json
 sass.sh
 package.json
 package-lock.json

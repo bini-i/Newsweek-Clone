@@ -89,6 +89,9 @@ html {
     @media (min-width: 992px) {
       .bootstrap-override .banner .logo {
         height: 60px; } }
+    @media (max-width: 576px) {
+      .bootstrap-override .banner .logo {
+        height: 12px; } }
   .bootstrap-override .banner .navbar-toggler-icon {
     display: flex;
     justify-content: center;
@@ -114,12 +117,14 @@ html {
   .bootstrap-override .banner .date {
     display: none;
     position: relative; }
+    .bootstrap-override .banner .date img {
+      width: 20px; }
     .bootstrap-override .banner .date span {
       color: #fff; }
     @media (min-width: 992px) {
       .bootstrap-override .banner .date {
         display: flex;
-        margin-bottom: -40px; } }
+        flex-direction: column; } }
   .bootstrap-override .banner .subscribe-container {
     line-height: 1.1;
     color: black;
@@ -129,6 +134,11 @@ html {
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase; }
+    .bootstrap-override .banner .subscribe-container .offers {
+      display: none; }
+      @media (min-width: 768px) {
+        .bootstrap-override .banner .subscribe-container .offers {
+          display: block; } }
     @media (min-width: 768px) {
       .bootstrap-override .banner .subscribe-container {
         font-size: 18px; } }
@@ -410,7 +420,9 @@ html {
     font-family: arial, helvetica, sans-serif; }
 .row-article-container .signup {
   padding: 30px 20px;
-  background-color: #f4f5f6; }
+  background-color: #f4f5f6;
+  max-width: 300px;
+  margin: 0 auto; }
   .row-article-container .signup .logo {
     height: 35px; }
   .row-article-container .signup .signup-title {
@@ -521,6 +533,29 @@ html {
       font-size: 20px; }
       .in-magazine .content .item .detail a {
         color: black; }
+    .in-magazine .content .item:nth-of-type(1) .image {
+      position: relative; }
+      .in-magazine .content .item:nth-of-type(1) .image img {
+        height: 400px; }
+      .in-magazine .content .item:nth-of-type(1) .image .d-date {
+        position: absolute;
+        bottom: 0;
+        padding: 5px;
+        font-family: "Roboto Condensed", sans-serif;
+        background-color: #cecece;
+        color: #f72210; }
+    .in-magazine .content .item:nth-of-type(1) .see-all {
+      background-color: #f4f5f6;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      cursor: pointer; }
+      .in-magazine .content .item:nth-of-type(1) .see-all a {
+        color: black;
+        font-size: 20px;
+        text-decoration: none; }
+      .in-magazine .content .item:nth-of-type(1) .see-all:hover {
+        background-color: #cecece; }
 
 body {
   background-color: red; }
@@ -601,6 +636,14 @@ body {
     position: relative;
     height: 320px;
     background: #f4f5f6; }
+    @media (max-width: 767px) {
+      .subscribe-sec .subscribe {
+        flex-direction: column;
+        height: 450px; } }
+    @media (max-width: 576px) {
+      .subscribe-sec .subscribe {
+        flex-direction: column;
+        height: 600px; } }
     .subscribe-sec .subscribe .left {
       position: relative;
       display: block;
@@ -608,19 +651,42 @@ body {
       .subscribe-sec .subscribe .left .first {
         position: absolute;
         top: -120px; }
+        @media (max-width: 767px) {
+          .subscribe-sec .subscribe .left .first {
+            top: -35px; } }
+        @media (max-width: 576px) {
+          .subscribe-sec .subscribe .left .first {
+            left: -35px; } }
       .subscribe-sec .subscribe .left .second {
         position: absolute;
         top: -100px;
         left: 80px; }
+        @media (max-width: 767px) {
+          .subscribe-sec .subscribe .left .second {
+            top: -20px;
+            left: 30px; } }
+        @media (max-width: 576px) {
+          .subscribe-sec .subscribe .left .second {
+            left: -10px; } }
+    @media (max-width: 767px) {
+      .subscribe-sec .subscribe .right {
+        padding-top: 220px;
+        padding-left: 120px; } }
   .subscribe-sec .newsletter {
-    height: 320px;
+    overflow: hidden;
     border: solid 1px #f4f5f6; }
+    @media (min-width: 768px) {
+      .subscribe-sec .newsletter {
+        height: 320px; } }
     .subscribe-sec .newsletter .cover {
       background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5");
       width: 150%;
       background-size: cover;
       background-position: 50%;
       background-repeat: no-repeat; }
+      @media (max-width: 767px) {
+        .subscribe-sec .newsletter .cover {
+          height: 170px; } }
     .subscribe-sec .newsletter h3,
     .subscribe-sec .newsletter input,
     .subscribe-sec .newsletter p {
@@ -628,6 +694,9 @@ body {
     .subscribe-sec .newsletter button,
     .subscribe-sec .newsletter input {
       width: 100%; }
+    @media (max-width: 767px) {
+      .subscribe-sec .newsletter {
+        flex-direction: column; } }
 
 footer {
   padding: 30px 10px; }

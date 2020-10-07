@@ -65,6 +65,43 @@
           color: $color_black;
         }
       }
+
+      &:nth-of-type(1) {
+        .image {
+          position: relative;
+
+          img {
+            height: 400px;
+          }
+
+          .d-date {
+            position: absolute;
+            bottom: 0;
+            padding: 5px;
+            font-family: $font1;
+            background-color: $color_gray_1;
+            color: $color_red;
+          }
+        }
+
+        .see-all {
+          background-color: $color_gray_l;
+          width: 100%;
+          padding: 10px 0;
+          text-align: center;
+          cursor: pointer;
+
+          a {
+            color: $color_black;
+            font-size: 20px;
+            text-decoration: none;
+          }
+
+          &:hover {
+            background-color: $color_gray_1;
+          }
+        }
+      }
     }
   }
 }
