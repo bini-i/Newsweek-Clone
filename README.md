@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://bini-i.github.io/Newsweek-Clone/index)
 
 ## Authors
 
@@ -24,11 +24,11 @@
 - Twitter: [@binyamshewa](https://twitter.com/binyamshewa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/binyam-hailemeskel-728048151/)
 
-👤 ****
+👤 **Rukundo Eric**
 
-- GitHub: []()
-- Twitter: []()
-- LinkedIn: [LinkedIn]()
+- GitHub: [@githubhandle](https://github.com/rukundoeric)
+- Twitter: [@twitterhandle](https://twitter.com/rukundoeric005)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rukundo-eric-000bba181/)
 
 ## 🤝 Contributing
 
