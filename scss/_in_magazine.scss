@@ -29,14 +29,23 @@
       width: 23%;
       margin-bottom: 15px;
 
+      @include breakpoint ($md_screen) {
+        width: 100%;
+      }
+
       .item-img {
         display: block;
 
         img {
           width: 100%;
           object-fit: cover;
-          height: 290px;
+          height: 240px;
+
+          @include breakpoint($md_screen) {
+            height: 100%;
+          }
         }
+
       }
 
       .type {
