@@ -107,18 +107,18 @@ html {
   }
 
   @include breakpoint($xl_screen) {
-      &::after {
-        display: block;
-        content: "";
-        background-color: #f72210;
-        border-left: 12px solid white;
-        border-top: 13px solid #f72210;
-        position: absolute;
-        bottom: -13px;
-        right: 0;
-        width: 70px;
-      }
+    &::after {
+      display: block;
+      content: "";
+      background-color: #f72210;
+      border-left: 12px solid white;
+      border-top: 13px solid #f72210;
+      position: absolute;
+      bottom: -13px;
+      right: 0;
+      width: 70px;
     }
+  }
 }
 
 .nav-head {
@@ -127,80 +127,10 @@ html {
   width: 100%;
 }
 
-.bootstrap-override .header-top {
-  // @include breakpoint($lg_screen) {
-  //   display: none;
-  // }
-  //
-  // @include breakpoint($md_screen) {
-  //   display: none;
-  // }
-
-  width: 100%;
-
-  ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 100px 15px 0;
-  }
-
-  li {
-    border-right: solid $color_gray 1px;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-
-    a {
-      color: $color_black;
-      padding: 0 5px;
-      font-size: 19px;
-      font-weight: 800;
-
-      &:hover {
-        text-decoration: none;
-        color: $color_red;
-      }
-    }
-
-    input {
-      border: 0;
-      margin-right: 5px;
-    }
-  }
-
-  li:last-child {
-    border: 0;
-  }
-
-  .search {
-    display: flex;
-    position: relative;
-    border-right: 0;
-
-    input {
-      width: 70px;
-    }
-
-    .fas {
-      position: absolute;
-      top: 6px;
-      right: 0;
-    }
-  }
-}
-
 .header-bottom {
   width: 100%;
 
-  // @include breakpoint($lg_screen) {
-  //   display: none;
-  // }
-  //
-  // @include breakpoint($md_screen) {
-  //   display: none;
-  // }
-
-  ul {
+  .navbar-nav {
     margin: 0;
     padding: 0 20px;
 
@@ -209,7 +139,7 @@ html {
       margin-right: 20px;
       padding-left: 0;
 
-      a {
+      .nav-link {
         color: $color_gray;
         text-transform: uppercase;
         font-weight: 600;
@@ -218,6 +148,60 @@ html {
           text-decoration: none;
           color: $color_red;
         }
+      }
+    }
+  }
+}
+
+.bootstrap-override .header-top {
+  width: 100%;
+
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 70px 15px 0;
+
+    .nav-item {
+      border-right: solid $color_gray 1px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+
+      a {
+        color: $color_black;
+        padding: 0 5px;
+        font-size: 19px;
+        font-weight: 800;
+
+        &:hover {
+          text-decoration: none;
+          color: $color_red;
+        }
+      }
+
+      input {
+        border: 0;
+        margin-right: 5px;
+      }
+
+      &:last-child {
+        border: 0;
+      }
+    }
+
+    .search {
+      display: flex;
+      position: relative;
+      border-right: 0;
+
+      input {
+        width: 70px;
+      }
+
+      .fas {
+        position: absolute;
+        top: 6px;
+        right: 0;
       }
     }
   }

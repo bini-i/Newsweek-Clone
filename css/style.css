@@ -15,6 +15,19 @@ a {
   font-family: "Roboto Condensed", sans-serif;
   cursor: pointer; }
 
+.bootstrap-override .navbar .fixed {
+  position: fixed;
+  z-index: 20; }
+  .bootstrap-override .navbar .fixed #banner-date {
+    display: none; }
+  .bootstrap-override .navbar .fixed #newsweek-logo {
+    height: 20px; }
+  .bootstrap-override .navbar .fixed::after {
+    display: none; }
+  .bootstrap-override .navbar .fixed .links {
+    display: flex;
+    margin-bottom: 0; }
+
 .line {
   border-bottom: 2px solid #e7e7e7;
   width: 100%; }
@@ -143,57 +156,57 @@ html {
   flex-direction: column;
   width: 100%; }
 
-.bootstrap-override .header-top {
-  width: 100%; }
-  .bootstrap-override .header-top ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 100px 15px 0; }
-  .bootstrap-override .header-top li {
-    border-right: solid #9a9a9a 1px;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center; }
-    .bootstrap-override .header-top li a {
-      color: black;
-      padding: 0 5px;
-      font-size: 19px;
-      font-weight: 800; }
-      .bootstrap-override .header-top li a:hover {
-        text-decoration: none;
-        color: #f72210; }
-    .bootstrap-override .header-top li input {
-      border: 0;
-      margin-right: 5px; }
-  .bootstrap-override .header-top li:last-child {
-    border: 0; }
-  .bootstrap-override .header-top .search {
-    display: flex;
-    position: relative;
-    border-right: 0; }
-    .bootstrap-override .header-top .search input {
-      width: 70px; }
-    .bootstrap-override .header-top .search .fas {
-      position: absolute;
-      top: 6px;
-      right: 0; }
-
 .header-bottom {
   width: 100%; }
-  .header-bottom ul {
+  .header-bottom .navbar-nav {
     margin: 0;
     padding: 0 20px; }
-    .header-bottom ul .li-link {
+    .header-bottom .navbar-nav .li-link {
       color: #9a9a9a;
       margin-right: 20px;
       padding-left: 0; }
-      .header-bottom ul .li-link a {
+      .header-bottom .navbar-nav .li-link .nav-link {
         color: #9a9a9a;
         text-transform: uppercase;
         font-weight: 600; }
-        .header-bottom ul .li-link a:hover {
+        .header-bottom .navbar-nav .li-link .nav-link:hover {
           text-decoration: none;
           color: #f72210; }
+
+.bootstrap-override .header-top {
+  width: 100%; }
+  .bootstrap-override .header-top .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 70px 15px 0; }
+    .bootstrap-override .header-top .navbar-nav .nav-item {
+      border-right: solid #9a9a9a 1px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center; }
+      .bootstrap-override .header-top .navbar-nav .nav-item a {
+        color: black;
+        padding: 0 5px;
+        font-size: 19px;
+        font-weight: 800; }
+        .bootstrap-override .header-top .navbar-nav .nav-item a:hover {
+          text-decoration: none;
+          color: #f72210; }
+      .bootstrap-override .header-top .navbar-nav .nav-item input {
+        border: 0;
+        margin-right: 5px; }
+      .bootstrap-override .header-top .navbar-nav .nav-item:last-child {
+        border: 0; }
+    .bootstrap-override .header-top .navbar-nav .search {
+      display: flex;
+      position: relative;
+      border-right: 0; }
+      .bootstrap-override .header-top .navbar-nav .search input {
+        width: 70px; }
+      .bootstrap-override .header-top .navbar-nav .search .fas {
+        position: absolute;
+        top: 6px;
+        right: 0; }
 
 .featured-stories {
   display: flex;
@@ -339,8 +352,7 @@ html {
     width: 100%;
     content: "";
     height: 1px;
-    background: #9a9a9a;
-    z-index: -1; }
+    background: #9a9a9a; }
   .the-debate .divider::before {
     top: 14px; }
   .the-debate .divider::after {
@@ -353,7 +365,9 @@ html {
     color: #f4f5f6;
     font-family: "Roboto Condensed", sans-serif;
     display: grid;
-    place-items: center; }
+    place-items: center;
+    z-index: 5;
+    position: relative; }
 .the-debate .opinion .debate-item {
   border-bottom: solid #9a9a9a 1px; }
 

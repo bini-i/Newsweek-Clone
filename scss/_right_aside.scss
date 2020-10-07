@@ -44,7 +44,6 @@
       content: "";
       height: 1px;
       background: $color_gray;
-      z-index: -1;
     }
 
     &::before {
@@ -64,6 +63,8 @@
       font-family: $font1;
       display: grid;
       place-items: center;
+      z-index: 5;
+      position: relative;
     }
   }
 

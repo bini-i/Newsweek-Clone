@@ -19,6 +19,29 @@ a {
   cursor: pointer;
 }
 
+.bootstrap-override .navbar .fixed {
+  position: fixed;
+  z-index: 20;
+  // align-items: center;
+
+  #banner-date {
+    display: none;
+  }
+
+  #newsweek-logo {
+    height: 20px;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
 .line {
   border-bottom: 2px solid lighten($color_gray, 30%);
   width: 100%;

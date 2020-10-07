@@ -1,14 +1,15 @@
 $(document).ready(() => {
   $(window).scroll(() => {
     const windowTop = $(window).scrollTop() + 1;
+    console.log("Helo there");
     if (windowTop > 50) {
-      $("#nav_bar_menu").addClass("fixed");
-      $("#ntw_logo").css("display", "flex");
-      $("#nav_bar_sub_links").css("display", "none");
+      $("#banner-effect").addClass("bootstrap-override fixed");
+      $("#banner-effect").css("position", "fixed");
+      $("#menu-btn").css("display", "block");
     } else {
-      $("#nav_bar_menu").removeClass("fixed");
-      $("#ntw_logo").css("display", "none");
-      $("#nav_bar_sub_links").css("display", "flex");
+      $("#banner-effect").removeClass("bootstrap-override fixed");
+      $("#banner-effect").css("position", "relative");
+      $("#menu-btn").css("display", "none");
     }
   });
 });
