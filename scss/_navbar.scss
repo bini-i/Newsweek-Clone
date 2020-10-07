@@ -20,6 +20,7 @@ html {
   justify-content: space-between;
   margin: 0;
   align-items: center;
+  position: relative;
 
   @include breakpoint($md_screen) {
     height: 50px;
@@ -104,34 +105,54 @@ html {
     display: flex;
     justify-content: space-between;
   }
+
+  @include breakpoint($xl_screen) {
+      &::after {
+        display: block;
+        content: "";
+        background-color: #f72210;
+        border-left: 12px solid white;
+        border-top: 13px solid #f72210;
+        position: absolute;
+        bottom: -13px;
+        right: 0;
+        width: 70px;
+      }
+    }
 }
 
-.header-top {
-  @include breakpoint($lg_screen) {
-    display: none;
-  }
+.nav-head {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-  @include breakpoint($md_screen) {
-    display: none;
-  }
+.bootstrap-override .header-top {
+  // @include breakpoint($lg_screen) {
+  //   display: none;
+  // }
+  //
+  // @include breakpoint($md_screen) {
+  //   display: none;
+  // }
 
   width: 100%;
 
   ul {
     display: flex;
     justify-content: space-between;
-    padding: 15px 100px 0 0;
+    padding: 15px 100px 15px 0;
   }
 
   li {
-    border-left: solid $color_gray 1px;
+    border-right: solid $color_gray 1px;
     display: flex;
     flex-grow: 1;
     justify-content: center;
 
     a {
       color: $color_black;
-      padding: 0 10px;
+      padding: 0 5px;
       font-size: 19px;
       font-weight: 800;
 
@@ -143,10 +164,11 @@ html {
 
     input {
       border: 0;
+      margin-right: 5px;
     }
   }
 
-  li:first-child {
+  li:last-child {
     border: 0;
   }
 
@@ -170,17 +192,17 @@ html {
 .header-bottom {
   width: 100%;
 
-  @include breakpoint($lg_screen) {
-    display: none;
-  }
-
-  @include breakpoint($md_screen) {
-    display: none;
-  }
+  // @include breakpoint($lg_screen) {
+  //   display: none;
+  // }
+  //
+  // @include breakpoint($md_screen) {
+  //   display: none;
+  // }
 
   ul {
     margin: 0;
-    padding: 10px 20px;
+    padding: 0 20px;
 
     .li-link {
       color: $color_gray;
