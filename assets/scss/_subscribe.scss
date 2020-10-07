@@ -82,9 +82,11 @@
     }
 
     .right {
-      @include breakpoint($md_screen) {
-        padding-top: 220px;
+      @include breakpoint($ol_screen){
         padding-left: 120px;
+      }
+      @include breakpoint($md_screen) {
+        padding-top: 210px;
       }
     }
   }

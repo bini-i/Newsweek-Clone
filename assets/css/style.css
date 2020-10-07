@@ -299,28 +299,26 @@ html {
         font-size: 24px; }
     .top-stories .article-container .article-item p {
       font-family: arial, helvetica, sans-serif; }
-  .top-stories .my-turns {
-    width: 100%; }
-    .top-stories .my-turns .turn-item {
-      padding: 0.5rem; }
-      .top-stories .my-turns .turn-item .article-item-image {
-        width: 100%; }
-      .top-stories .my-turns .turn-item .article-item-link {
-        color: #9a9a9a; }
-        .top-stories .my-turns .turn-item .article-item-link h5 {
-          font-size: 16px; }
-      .top-stories .my-turns .turn-item .image {
-        position: relative;
-        width: 100%; }
-        .top-stories .my-turns .turn-item .image .category {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          color: black;
-          padding: 5px;
-          font-size: 12px;
-          text-transform: uppercase;
-          background-color: #9a9a9a; }
+  .top-stories .my-turns .turn-item {
+    padding: 0.5rem; }
+    .top-stories .my-turns .turn-item .article-item-image {
+      width: 100%; }
+    .top-stories .my-turns .turn-item .article-item-link {
+      color: #9a9a9a; }
+      .top-stories .my-turns .turn-item .article-item-link h5 {
+        font-size: 16px; }
+    .top-stories .my-turns .turn-item .image {
+      position: relative;
+      width: 100%; }
+      .top-stories .my-turns .turn-item .image .category {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: black;
+        padding: 5px;
+        font-size: 12px;
+        text-transform: uppercase;
+        background-color: #9a9a9a; }
   .top-stories .more-stories .story-item {
     border-top: solid 1px #9a9a9a;
     padding: 0.9rem 0; }
@@ -668,10 +666,12 @@ body {
         @media (max-width: 576px) {
           .subscribe-sec .subscribe .left .second {
             left: -10px; } }
+    @media (min-width: 768px) {
+      .subscribe-sec .subscribe .right {
+        padding-left: 120px; } }
     @media (max-width: 767px) {
       .subscribe-sec .subscribe .right {
-        padding-top: 220px;
-        padding-left: 120px; } }
+        padding-top: 210px; } }
   .subscribe-sec .newsletter {
     overflow: hidden;
     border: solid 1px #f4f5f6; }
