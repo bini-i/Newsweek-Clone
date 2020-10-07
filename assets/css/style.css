@@ -254,6 +254,9 @@ html {
   font-family: "Roboto Condensed", sans-serif;
   box-sizing: border-box;
   padding: 0 30px; }
+  @media (max-width: 767px) {
+    .top-stories {
+      padding: 0 0; } }
   .top-stories h6 {
     color: #9a9a9a;
     font-size: 16px;
@@ -561,7 +564,7 @@ body {
       font-size: 1em;
       font-family: arial, helvetica, sans-serif; }
   .other_news .us_section .aside-items {
-    padding: 0 20px; }
+    padding: 0 5px; }
     .other_news .us_section .aside-items h2 {
       font-size: 16px;
       color: black;
@@ -631,11 +634,13 @@ footer {
   footer .top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     border-bottom: solid 1px #9a9a9a; }
     footer .top .left {
       display: flex;
-      align-items: flex-end; }
+      align-items: flex-end;
+      flex-wrap: wrap; }
       footer .top .left p {
         margin-bottom: 0;
         font-size: 12px; }
@@ -645,7 +650,7 @@ footer {
       display: flex;
       align-items: baseline; }
       footer .top .social i {
-        font-size: 25px;
+        font-size: 30px;
         color: #9a9a9a;
         margin-right: 15px; }
   footer .bottom {
@@ -660,10 +665,12 @@ footer {
     padding-left: 0; }
     footer .lang li,
     footer .nav li {
-      font-size: 12px;
+      font-size: 14px;
       float: left;
       padding-right: 7px;
       margin-right: 7px;
       border-right: solid 1px #9a9a9a; }
+  footer .lang li:first-child {
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

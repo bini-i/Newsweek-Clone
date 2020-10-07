@@ -4,12 +4,14 @@ footer {
   .top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     border-bottom: solid 1px $color_gray;
 
     .left {
       display: flex;
       align-items: flex-end;
+      flex-wrap: wrap;
 
       p {
         margin-bottom: 0;
@@ -26,7 +28,7 @@ footer {
       align-items: baseline;
 
       i {
-        font-size: 25px;
+        font-size: 30px;
         color: $color_gray;
         margin-right: 15px;
       }
@@ -47,11 +49,17 @@ footer {
     padding-left: 0;
 
     li {
-      font-size: 12px;
+      font-size: 14px;
       float: left;
       padding-right: 7px;
       margin-right: 7px;
       border-right: solid 1px $color_gray;
+    }
+  }
+
+  .lang {
+    li:first-child {
+      font-weight: bold;
     }
   }
 }
