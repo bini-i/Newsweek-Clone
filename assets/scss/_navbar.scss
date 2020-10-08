@@ -1,0 +1,204 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+.bootstrap-override .navbar {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.bootstrap-override .banner {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $color_red;
+  padding: 10px 20px;
+  margin: 0;
+  position: relative;
+
+  @include breakpoint($md_screen) {
+    height: 50px;
+  }
+
+  .logo {
+    height: 20px;
+
+    @include breakpoint($xl_screen) {
+      height: 60px;
+    }
+
+    @include breakpoint($sm_screen) {
+      height: 13px;
+    }
+  }
+
+  .navbar-toggler-icon {
+    color: $color_gray;
+  }
+
+  .login {
+    color: $color_white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 20px;
+
+    @include breakpoint($md_screen) {
+      display: none;
+    }
+  }
+
+  .user {
+    color: $color_gray_l;
+
+    @include breakpoint($ol_screen) {
+      display: none;
+    }
+  }
+
+  .links {
+    @include breakpoint($xl_screen) {
+      display: flex;
+      margin-bottom: -40px;
+    }
+  }
+
+  .date {
+    display: none;
+    position: relative;
+
+    img {
+      width: 20px;
+    }
+
+    span {
+      color: $color_white;
+    }
+  }
+
+  .subscribe-container {
+    line-height: 1.1;
+    color: $color_black;
+    background-color: $color_yellow;
+    padding: 3px 12px;
+    border-radius: 24px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    .offers {
+      display: none;
+
+      @include breakpoint($ol_screen) {
+        display: block;
+      }
+    }
+
+    @include breakpoint($ol_screen) {
+      font-size: 18px;
+    }
+
+    i {
+      font-size: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  @include breakpoint($xl_screen) {
+    &::after {
+      display: block;
+      content: "";
+      background-color: #f72210;
+      border-left: 12px solid white;
+      border-top: 13px solid #f72210;
+      position: absolute;
+      bottom: -13px;
+      right: 0;
+      width: 70px;
+    }
+  }
+}
+
+.nav-head {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-bottom {
+  width: 100%;
+
+  .navbar-nav {
+    margin: 0;
+    padding: 0 20px;
+
+    .li-link {
+      color: $color_gray;
+      margin-right: 20px;
+      padding-left: 0;
+
+      .nav-link {
+        color: $color_gray;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: none;
+          color: $color_red;
+        }
+      }
+    }
+  }
+}
+
+.bootstrap-override .header-top {
+  width: 100%;
+
+  .navbar-nav {
+    padding: 15px 70px 15px 0;
+
+    .nav-item {
+      border-right: solid $color_gray 1px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+
+      a {
+        color: $color_black;
+        padding: 0 5px;
+        font-size: 19px;
+        font-weight: 800;
+
+        &:hover {
+          text-decoration: none;
+          color: $color_red;
+        }
+      }
+
+      input {
+        border: 0;
+        margin-right: 5px;
+      }
+
+      &:last-child {
+        border: 0;
+      }
+    }
+
+    .search {
+      display: flex;
+      position: relative;
+      border-right: 0;
+
+      input {
+        width: 70px;
+      }
+
+      .fas {
+        position: absolute;
+        top: 6px;
+        right: 0;
+      }
+    }
+  }
+}

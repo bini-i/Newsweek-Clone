@@ -1,0 +1,165 @@
+.the-debate {
+  .debate-sec {
+    color: $color_gray;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: $font1;
+  }
+
+  .debates {
+    border-top: solid 4px $color_gray;
+    border-bottom: solid 4px $color_gray;
+  }
+
+  .debate-item {
+    .debater-img {
+      width: 63px;
+      height: 63px;
+    }
+
+    .details {
+      .title {
+        color: $color_black;
+        font-size: 1.1rem;
+        font-family: $font1;
+      }
+
+      .name {
+        text-transform: uppercase;
+        color: $color_gray;
+        font-size: 0.9rem;
+        font-family: $font1;
+      }
+    }
+  }
+
+  .divider {
+    position: relative;
+
+    &::after,
+    &::before {
+      position: absolute;
+      display: block;
+      width: 100%;
+      content: "";
+      height: 1px;
+      background: $color_gray;
+    }
+
+    &::before {
+      top: 14px;
+    }
+
+    &::after {
+      top: 16px;
+    }
+
+    .vs {
+      margin: 0 auto;
+      width: 32px;
+      height: 32px;
+      background: $color_black;
+      color: $color_gray_l;
+      font-family: $font1;
+      display: grid;
+      place-items: center;
+      z-index: 5;
+      position: relative;
+    }
+  }
+
+  .opinion {
+    .debate-item {
+      border-bottom: solid $color_gray 1px;
+    }
+  }
+}
+
+.row-article-container {
+  .row-article-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .article-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+
+      .catagory {
+        position: absolute;
+        bottom: 0;
+        background: $color_white;
+        color: $color_blue;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 8px 15px 9px;
+        border-bottom: 1px solid $color_gray_1;
+      }
+
+      a {
+        display: block;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .info {
+      padding: 10px;
+      border-bottom: 1px solid $color_gray_1;
+      border-left: 1px solid $color_gray_1;
+      border-right: 1px solid $color_gray_1;
+
+      h5 {
+        margin: 7px 0;
+
+        a {
+          color: $color_black;
+          font-size: 24px;
+        }
+      }
+    }
+
+    p {
+      font-family: $font2;
+    }
+  }
+
+  .signup {
+    padding: 30px 20px;
+    background-color: $color_gray_l;
+    max-width: 300px;
+    margin: 0 auto;
+
+    .logo {
+      height: 35px;
+    }
+
+    .signup-title {
+      font-size: 15px;
+      margin-left: 10px;
+      font-family: $font1;
+      font-weight: 700;
+    }
+
+    .emailtext {
+      padding: 5px 10px;
+      width: 100%;
+      border: 1px solid $color_gray;
+      color: $color_gray;
+    }
+
+    .signupbtn {
+      color: $color_white;
+      font-family: $font1;
+      width: 100%;
+      background-color: $color_red;
+      border: 0;
+      padding: 5px 0;
+      border-radius: 10px;
+    }
+  }
+}

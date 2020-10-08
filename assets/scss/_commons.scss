@@ -1,0 +1,83 @@
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: $color_gray_l;
+}
+
+ul,
+li {
+  display: block;
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  font-family: $font1;
+  cursor: pointer;
+}
+
+.bootstrap-override .navbar .fixed {
+  position: fixed;
+  z-index: 20;
+
+  #banner-date {
+    display: none;
+  }
+
+  #newsweek-logo {
+    height: 20px;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
+.line {
+  border-bottom: 2px solid lighten($color_gray, 30%);
+  width: 100%;
+
+  @include breakpoint($lg_screen) {
+    display: none;
+  }
+
+  @include breakpoint($md_screen) {
+    display: none;
+  }
+}
+
+.bootstrap-override .container {
+  padding: 0;
+  background-color: $color_white;
+
+  @include breakpoint($xl_screen) {
+    max-width: 1310px;
+  }
+
+  @include breakpoint($lg_screen) {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  @include breakpoint($md_screen) {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  @include breakpoint($xs_screen) {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+main {
+  padding: 0 30px;
+}

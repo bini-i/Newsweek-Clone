@@ -1,0 +1,111 @@
+.in-magazine {
+  .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px $color_gray;
+    padding: 8px;
+    margin-bottom: 15px;
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+      background: url("https://g.newsweek.com/www/images/logo-n1.svg") $color_red;
+    }
+
+    .title {
+      font-size: 19px;
+      color: $color_black;
+      font-family: $font1;
+      margin: 0;
+    }
+  }
+
+  .content {
+    font-family: $font1;
+
+    .item {
+      width: 23%;
+      margin-bottom: 15px;
+
+      @include breakpoint ($md_screen) {
+        width: 100%;
+      }
+
+      .item-img {
+        display: block;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 240px;
+
+          @include breakpoint($md_screen) {
+            height: 100%;
+          }
+        }
+      }
+
+      .type {
+        background: $color_red;
+        color: $color_white;
+        padding: 0 7px;
+        margin-right: 7px;
+      }
+
+      .catagory {
+        color: $color_red;
+      }
+
+      .detail {
+        font-size: 20px;
+
+        a {
+          color: $color_black;
+        }
+      }
+
+      &:nth-of-type(1) {
+        .image {
+          position: relative;
+
+          img {
+            height: 100%;
+
+            @include breakpoint($ol_screen) {
+              height: 335px;
+            }
+          }
+
+          .d-date {
+            position: absolute;
+            bottom: 0;
+            padding: 5px;
+            font-family: $font1;
+            background-color: $color_gray_1;
+            color: $color_red;
+          }
+        }
+
+        .see-all {
+          background-color: $color_gray_l;
+          width: 100%;
+          padding: 10px 0;
+          text-align: center;
+          cursor: pointer;
+
+          a {
+            color: $color_black;
+            font-size: 20px;
+            text-decoration: none;
+          }
+
+          &:hover {
+            background-color: $color_gray_1;
+          }
+        }
+      }
+    }
+  }
+}

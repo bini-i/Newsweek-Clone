@@ -1,0 +1,123 @@
+.top-stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: $font1;
+  box-sizing: border-box;
+  padding: 0 30px;
+
+  @include breakpoint($md_screen) {
+    padding: 0 0;
+  }
+
+  h6 {
+    color: $color_gray;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .article-container {
+    .article-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .article-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+
+        .catagory {
+          position: absolute;
+          bottom: 0;
+          background: $color_white;
+          color: $color_red;
+          font-size: 17px;
+          font-weight: 700;
+          padding: 8px 15px 9px;
+        }
+
+        a {
+          display: block;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .article-item-link {
+        margin: 7px 0;
+
+        a {
+          color: $color_black;
+          font-size: 24px;
+        }
+      }
+
+      p {
+        font-family: $font2;
+      }
+    }
+  }
+
+  .my-turns {
+    .turn-item {
+      padding: 0.5rem;
+
+      .article-item-image {
+        width: 100%;
+      }
+
+      .article-item-link {
+        color: $color_gray;
+
+        h5 {
+          font-size: 16px;
+        }
+      }
+
+      .image {
+        position: relative;
+        width: 100%;
+
+        .category {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          color: $color_black;
+          padding: 5px;
+          font-size: 12px;
+          text-transform: uppercase;
+          background-color: $color_gray;
+        }
+      }
+    }
+  }
+
+  .more-stories {
+    .story-item {
+      border-top: solid 1px $color_gray;
+      padding: 0.9rem 0;
+
+      .story-img {
+        width: 95px;
+        height: 95px;
+      }
+
+      .story-title {
+        line-height: 1.1;
+        font-size: 1.1rem;
+        color: $color_black;
+      }
+
+      .detail {
+        line-height: 1.2;
+        font-size: 0.95rem;
+        font-weight: 400;
+        font-family: arial, sans-serif;
+      }
+    }
+  }
+}

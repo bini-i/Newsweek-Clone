@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Newsweek-Clone</title>
+    <link
+      rel="icon"
+      href="https://g.newsweek.com/themes/newsweek/favicons/apple-touch-icon.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome script -->
+    <script
+      src="https://kit.fontawesome.com/2bce053742.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="bootstrap-override">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg d-flex flex-column">
+        <div class="banner d-flex justify-content-between align-items-center" id="banner-effect">
+          <div id="banner-date" class="date d-none d-lg-flex flex-lg-column">
+            <div class="wether d-flex mb-3">
+               <img src="https://g.newsweek.com/img/weather/30.png" alt="weather-icon" />
+               <span>&nbsp;&nbsp;27°&nbsp;Kigali, RW&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></span>
+            </div>
+            <span>Mon, Oct 05, 2020</span>
+          </div>
+          <div class="d-flex">
+            <a class="navbar-brand" href="#"
+              ><img id="newsweek-logo" class="logo" src="./assets/img/logo.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="d-flex align-items-center links">
+            <a class="login" href="#">LOGIN</a>
+            <a href="#" class="mr-3 user"><i class="fas fa-user"></i></a>
+            <a href="#" class="d-flex align-items-center subscribe-container">
+              Subscription&nbsp;<span class="offers">offers</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            <button
+              id="menu-btn"
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon d-flex justify-content-center align-items-center"
+                ><i class="fas fa-bars"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+        <div class="nav-head collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="header-top pr-3">
+            <ul class="navbar-nav d-flex justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link" href="#">U.S.</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">World</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tech&nbsp;&&nbsp;Science</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Culture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Newsgeek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">The&nbsp;Debate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vantage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Weather</a>
+              </li>
+              <li class="search nav-item">
+                <input type="text" placeholder="Search" name="a" value="" />
+                <i class="fas fa-search"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="line"></div>
+          <div class="header-bottom">
+            <ul class="navbar-nav d-flex">
+              <li class="nav-item li-link"><a href="#" class="nav-link text-dark active">Trending</a></li>
+              <li class="nav-item li-link"><a class="nav-link" href="#">Donald Trump</a></li>
+              <li class="nav-item li-link"><a class="nav-link" href="#">Joe Biden</a></li>
+              <li class="nav-item li-link"><a class="nav-link" href="#">Stimulus Package</a></li>
+              <li class="nav-item li-link"><a class="nav-link" href="#">Coronavirus</a></li>
+              <li class="nav-item li-link"><a class="nav-link" href="#">2020 Election</a></li>
+            </ul>
+          </div>
+          <div class="line"></div>
+        </div>
+      </nav>
+
+      <main class="row">
+        <div class="col-lg-3 col-md-5 px-0">
+          <div class="featured-stories">
+            <div class="article-container d-md-none">
+              <h6 class="my-2">TOP STORIES</h6>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      class="article-item-image"
+                      src="https://d.newsweek.com/en/full/1647173/texas-voting.jpg?w=591&h=364&f=83de8aad149cbe07954046926cb84a6c"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5 class="article-item-link">
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+            </div>
+            <h6 class="my-2">FEATURED STORIES</h6>
+            <div class="article-container">
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a class="title-link-1" href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a class="title-link-1" href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a class="title-link-1" href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5>
+                  <a class="title-link-1" href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+            </div>
+            <div class="row-article-container">
+              <article class="row-article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1646005/california-wildfires.webp?w=397&h=265&q=90&f=708481e0e3840817493f048495b211ab"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">SPONSORED INSIGHT</span>
+                </div>
+                <div class="info">
+                  <a href="#"></a>
+                  <h5>
+                    <a href="#"
+                      >Trump COVID Update—What Doctors Have Said About
+                      President's Illness</a
+                    >
+                  </h5>
+                  <p>
+                    Dr. Sean Conley, the president's physician, said he had been
+                    concerned about "possible rapid progression of the illness,"
+                    following two developments on Friday.
+                  </p>
+                </div>
+              </article>
+              <article class="row-article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      src="https://d.newsweek.com/en/full/1646005/california-wildfires.webp?w=397&h=265&q=90&f=708481e0e3840817493f048495b211ab"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">SPONSORED INSIGHT</span>
+                </div>
+                <div class="info">
+                  <a href="#"></a>
+                  <h5>
+                    <a href="#"
+                      >Trump COVID Update—What Doctors Have Said About
+                      President's Illness</a
+                    >
+                  </h5>
+                  <p>
+                    Dr. Sean Conley, the president's physician, said he had been
+                    concerned about "possible rapid progression of the illness,"
+                    following two developments on Friday.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-7 px-0">
+          <div class="top-stories">
+            <div class="article-container d-none d-sm-none d-md-block">
+              <h6 class="my-2">TOP STORIES</h6>
+              <article class="article-item pb-3">
+                <div class="article-image">
+                  <a href="#">
+                    <img
+                      class="article-item-image"
+                      src="https://d.newsweek.com/en/full/1647173/texas-voting.jpg?w=591&h=364&f=83de8aad149cbe07954046926cb84a6c"
+                      alt="Walter Reed Medical Center, Trump COVID-19 update"
+                    />
+                  </a>
+                  <span class="catagory">NEWS</span>
+                </div>
+                <a href="#"></a>
+                <h5 class="article-item-link">
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </article>
+            </div>
+
+            <div class="the-debate d-md-none">
+              <h5 class="debate-sec my-2">THE DEBATE</h5>
+              <div class="debates py-3">
+                <div class="debate-item clearfix">
+                  <a class="float-left mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1641374/robert-p-george.png?w=150&h=150&f=365b9cdc1ef783cc2559d38ccbf310b9"
+                      alt="image"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">The Case for Amy Coney Barrett</h6>
+                    <span class="name">BY ROBERT P.GEORGE</span>
+                  </div>
+                </div>
+
+                <div class="divider my-4">
+                  <div class="vs rounded-circle">VS</div>
+                </div>
+
+                <div class="debate-item clearfix">
+                  <a class="float-right ml-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1641374/robert-p-george.png?w=150&h=150&f=365b9cdc1ef783cc2559d38ccbf310b9"
+                      alt="image"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">The Case for Amy Coney Barrett</h6>
+                    <span class="name">BY ROBERT P.GEORGE</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="the-debate pt-4 d-md-none">
+              <h5 class="debate-sec my-2">OPINION</h5>
+              <div class="opinion">
+                <div class="debate-item py-2 d-flex">
+                  <a class="mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">
+                      Stop Ballot Harvesting Before it Threatens the 2020 Election
+                    </h6>
+                    <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                  </div>
+                </div>
+                <div class="debate-item py-2 d-flex">
+                  <a class="mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">
+                      Stop Ballot Harvesting Before it Threatens the 2020 Election
+                    </h6>
+                    <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                  </div>
+                </div>
+                <div class="debate-item py-2 d-flex">
+                  <a class="mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">
+                      Stop Ballot Harvesting Before it Threatens the 2020 Election
+                    </h6>
+                    <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                  </div>
+                </div>
+                <div class="debate-item py-2 d-flex">
+                  <a class="mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">
+                      Stop Ballot Harvesting Before it Threatens the 2020 Election
+                    </h6>
+                    <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                  </div>
+                </div>
+                <div class="debate-item py-2 d-flex">
+                  <a class="mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">
+                      Stop Ballot Harvesting Before it Threatens the 2020 Election
+                    </h6>
+                    <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                  </div>
+                </div>
+                <div class="debate-item py-2 d-flex">
+                  <a class="mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">
+                      Stop Ballot Harvesting Before it Threatens the 2020 Election
+                    </h6>
+                    <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                  </div>
+                </div>
+                <div class="debate-item py-2 d-flex">
+                  <a class="mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">
+                      Stop Ballot Harvesting Before it Threatens the 2020 Election
+                    </h6>
+                    <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                  </div>
+                </div>
+                <div class="debate-item py-2 d-flex">
+                  <a class="mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">
+                      Stop Ballot Harvesting Before it Threatens the 2020 Election
+                    </h6>
+                    <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                  </div>
+                </div>
+                <div class="debate-item py-2 d-flex">
+                  <a class="mr-3" href="#">
+                    <img
+                      class="debater-img"
+                      src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="details">
+                    <h6 class="title">
+                      Stop Ballot Harvesting Before it Threatens the 2020 Election
+                    </h6>
+                    <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h6 class="my-2 order-4 order-md-1">MY TURN</h6>
+            <div class="row my-turns d-flex order-4 order-md-1">
+              <article class="col-md-4 col-sm-12 turn-item">
+                <img
+                  class="mb-3 article-item-image"
+                  src="https://d.newsweek.com/en/full/1646981/wildlife-coyote-peterson-stings-bees.jpg?w=397&h=397&f=59f0ab5a6eafd874d699b95cd6019c70"
+                  alt="image"
+                />
+                <a class="article-item-link" href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+              <article class="col-md-4 col-sm-12 turn-item">
+                <img
+                  class="mb-3 article-item-image"
+                  src="https://d.newsweek.com/en/full/1646357/coronavirus-pandemic-death-family.jpg?w=397&h=397&f=742d6559dd401252982aaf8aaf99ffc4"
+                  alt="image"
+                />
+                <a class="article-item-link" href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+              <article class="col-md-4 col-sm-12 turn-item">
+                <img
+                  class="mb-3 article-item-image"
+                  src="https://d.newsweek.com/en/full/1645809/foster-care-adoption-racism-fatherhood.jpg?w=397&h=397&f=ef7db70a9d6a23468538f5b9bc9f512c"
+                  alt="image"
+                />
+                <a class="article-item-link" href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+            </div>
+            <h6 class="my-2 order-5 order-md-2">CULTURE & TRAVEL</h6>
+            <div class="row my-turns d-flex order-5 order-md-2">
+              <article class="col-md-4 col-sm-12 turn-item">
+                <div class="image mb-3">
+                  <img
+                    class="article-item-image"
+                    src="https://d.newsweek.com/en/full/1645381/100-best-rock-albums-all-time-according-critics.webp?w=397&h=397&f=4fac5a43a9d8890fa4ae6281e59ace15"
+                    alt="image"
+                  />
+                  <span class="category">MUSIC</span>
+                </div>
+                <a class="article-item-link" href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+              <article class="col-md-4 col-sm-12 turn-item">
+                <div class="image mb-3">
+                  <img
+                    class="article-item-image"
+                    src="https://d.newsweek.com/en/full/1641887/cul-map-wes-anderson-white-cyclon-banner.jpg?w=397&h=397&l=57&t=47&f=e5942c36302659ac5aa06f4fe5a7f5f1"
+                    alt="image"
+                  />
+                  <span class="category">MUSIC</span>
+                </div>
+                <a class="article-item-link" href="#"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+              <article class="col-md-4 col-sm-12 turn-item">
+                <div class="image mb-3">
+                  <img
+                    class="article-item-image"
+                    src="https://d.newsweek.com/en/full/1640554/zendaya.jpg?w=397&h=397&f=8e5f8ea8c3c7d315e48c42d9d4ae7f63"
+                    alt="image"
+                  />
+                  <span class="category">MUSIC</span>
+                </div>
+                <a href="#" class="article-item-link"
+                  ><h5>'My Home Was Burned Down In The Oregon Fires'</h5></a
+                >
+              </article>
+            </div>
+            <h6 class="order-3 order-md-3 mt-2">MORE STORIES</h6>
+            <div class="more-stories order-3 order-md-3">
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1645910/trump.jpg?w=95&h=95&f=fde6b4264187ed86328805f081f1490e"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1647005/vp.jpg?w=95&h=95&f=953617733f4d91d81b482956e7a1e0db"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1647175/lindsey-graham.jpg?w=95&h=95&f=84053f37e8955233bd58da450b0cc54f"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1647115/michael-hayden.jpg?w=95&h=95&f=afdb5ac7f1f39a9a9fbeba1d9eb6e80d"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1646984/donald-trump-white-house-october-2020.jpg?w=95&h=95&f=9937f51e28fa4f410091f8d3905ad94b"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1647004/russia-coronavirus.jpg?w=95&h=95&f=c88439aa5097dc5e86b866a98124abff"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1647098/trump-barrett.jpg?w=95&h=95&f=93140bc4e927a8e67a8663d6445c54f9"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1646881/2020-election-donald-trump-joe-biden-getty.jpg?w=95&h=95&f=653d09b3f71c785f54b9f1e1cfa55319"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1645910/trump.jpg?w=95&h=95&f=fde6b4264187ed86328805f081f1490e"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+              <article class="story-item clearfix">
+                <img
+                  class="story-img float-left mr-2 mb-1"
+                  src="https://d.newsweek.com/en/full/1647028/border-wall-mexico.jpg?w=95&h=95&f=e9de7fe7443d9ed61728251b20e4a3aa"
+                  alt="trump defeat"
+                />
+                <h4>
+                  <a class="story-title" href="#"
+                    >'Trump Defeats COVID' Coin Goes on Sale at Unofficial White
+                    House Gift Shop</a
+                  >
+                </h4>
+                <div class="detail">
+                  The coin is available for pre-order online, with buyers due to
+                  be shipped the item later in the year. The coin is available
+                  for pre-order online. The coin is available.
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 px-0">
+          <div class="the-debate d-none d-sm-none d-md-block">
+            <h5 class="debate-sec my-2">THE DEBATE</h5>
+            <div class="debates py-3">
+              <div class="debate-item clearfix">
+                <a class="float-left mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1641374/robert-p-george.png?w=150&h=150&f=365b9cdc1ef783cc2559d38ccbf310b9"
+                    alt="image"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">The Case for Amy Coney Barrett</h6>
+                  <span class="name">BY ROBERT P.GEORGE</span>
+                </div>
+              </div>
+
+              <div class="divider my-4">
+                <div class="vs rounded-circle">VS</div>
+              </div>
+
+              <div class="debate-item clearfix">
+                <a class="float-right ml-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1641374/robert-p-george.png?w=150&h=150&f=365b9cdc1ef783cc2559d38ccbf310b9"
+                    alt="image"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">The Case for Amy Coney Barrett</h6>
+                  <span class="name">BY ROBERT P.GEORGE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="the-debate pt-4 d-none d-sm-none d-md-block">
+            <h5 class="debate-sec my-2">OPINION</h5>
+            <div class="opinion">
+              <div class="debate-item py-2 d-flex">
+                <a class="mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                    alt="img"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">
+                    Stop Ballot Harvesting Before it Threatens the 2020 Election
+                  </h6>
+                  <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                </div>
+              </div>
+              <div class="debate-item py-2 d-flex">
+                <a class="mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                    alt="img"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">
+                    Stop Ballot Harvesting Before it Threatens the 2020 Election
+                  </h6>
+                  <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                </div>
+              </div>
+              <div class="debate-item py-2 d-flex">
+                <a class="mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                    alt="img"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">
+                    Stop Ballot Harvesting Before it Threatens the 2020 Election
+                  </h6>
+                  <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                </div>
+              </div>
+              <div class="debate-item py-2 d-flex">
+                <a class="mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                    alt="img"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">
+                    Stop Ballot Harvesting Before it Threatens the 2020 Election
+                  </h6>
+                  <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                </div>
+              </div>
+              <div class="debate-item py-2 d-flex">
+                <a class="mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                    alt="img"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">
+                    Stop Ballot Harvesting Before it Threatens the 2020 Election
+                  </h6>
+                  <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                </div>
+              </div>
+              <div class="debate-item py-2 d-flex">
+                <a class="mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                    alt="img"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">
+                    Stop Ballot Harvesting Before it Threatens the 2020 Election
+                  </h6>
+                  <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                </div>
+              </div>
+              <div class="debate-item py-2 d-flex">
+                <a class="mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                    alt="img"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">
+                    Stop Ballot Harvesting Before it Threatens the 2020 Election
+                  </h6>
+                  <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                </div>
+              </div>
+              <div class="debate-item py-2 d-flex">
+                <a class="mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                    alt="img"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">
+                    Stop Ballot Harvesting Before it Threatens the 2020 Election
+                  </h6>
+                  <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                </div>
+              </div>
+              <div class="debate-item py-2 d-flex">
+                <a class="mr-3" href="#">
+                  <img
+                    class="debater-img"
+                    src="https://d.newsweek.com/en/full/1645359/davis-gabbard.png?w=63&h=63&f=d86988ed1fc66d4768753ee59042e7e8"
+                    alt="img"
+                  />
+                </a>
+                <div class="details">
+                  <h6 class="title">
+                    Stop Ballot Harvesting Before it Threatens the 2020 Election
+                  </h6>
+                  <span class="name"> By Tulsi Gabbard and Rodney Davis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-article-container">
+            <article class="row-article-item pb-3">
+              <div class="article-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1638920/image-3-this-startup-making.jpg?w=500&h=333&f=d3ab894bb4a4f0a8af53551fabfb306d"
+                    alt="Walter Reed Medical Center, Trump COVID-19 update"
+                  />
+                </a>
+                <span class="catagory">SPONSORED INSIGHT</span>
+              </div>
+              <div class="info">
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </div>
+            </article>
+            <div class="signup my-3">
+              <div class="d-flex">
+                <img
+                  class="logo"
+                  src="https://g.newsweek.com/themes/newsweek/favicons/apple-touch-icon.png"
+                  alt="image"
+                />
+                <h4 class="signup-title">
+                  START YOUR DAY WITH OUR TOP 5 ARTICLES
+                </h4>
+              </div>
+              <div>
+                <input
+                  class="emailtext"
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email address"
+                />
+                <button class="signupbtn my-3">
+                  FREE SIGNUP <i class="fa fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <article class="row-article-item pb-3">
+              <div class="article-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1619000/florida-polytechnic-university.jpg?w=500&h=333&f=14b6478f6595d755bc302ff08d73b594"
+                    alt="Walter Reed Medical Center, Trump COVID-19 update"
+                  />
+                </a>
+                <span class="catagory">SPONSORED INSIGHT</span>
+              </div>
+              <div class="info">
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </div>
+            </article>
+            <article class="row-article-item pb-3">
+              <div class="article-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1646005/california-wildfires.webp?w=397&h=265&q=90&f=708481e0e3840817493f048495b211ab"
+                    alt="Walter Reed Medical Center, Trump COVID-19 update"
+                  />
+                </a>
+                <span class="catagory">SPONSORED INSIGHT</span>
+              </div>
+              <div class="info">
+                <a href="#"></a>
+                <h5>
+                  <a href="#"
+                    >Trump COVID Update—What Doctors Have Said About President's
+                    Illness</a
+                  >
+                </h5>
+                <p>
+                  Dr. Sean Conley, the president's physician, said he had been
+                  concerned about "possible rapid progression of the illness,"
+                  following two developments on Friday.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+      <div class="in-magazine px-3">
+        <div class="head">
+          <span class="icon"></span>
+          <h5 class="title">IN THE MAGAZINE</h5>
+        </div>
+        <div class="content d-flex flex-wrap justify-content-between mt-5">
+          <div class="item">
+            <div class="image">
+              <a class="item-img" href="#"
+              ><img
+                src="https://d.newsweek.com/en/full/1643943/cover-october-09-16-2020.webp?w=290&h=387&q=90&f=26d3b4b4b819db75fc5ff49cbe795e62"
+                alt="img"
+            /></a>
+            <span class="d-date">OCTOBER 16 ISSUE</span>
+            </div>
+            <div class="see-all">
+              <a href="#">
+                SEE ALL FEATURES&nbsp;&nbsp;<i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="item mt-3">
+            <a class="item-img" href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1641924/fe-rbg-banner.jpg?w=466&h=311&l=44&t=48&q=90&f=af0eb1671e67711f928ea0a22de6d298"
+                alt="img"
+              />
+            </a>
+            <div class="d-flex py-2 align-items-center">
+              <div class="type text-color">COVER</div>
+              <div class="catagory">U.S</div>
+            </div>
+            <div class="detail">
+              <a href="#">
+                Biden Should Promise to Pack the Supreme Court to Save It From
+                Partisan War
+              </a>
+            </div>
+          </div>
+          <div class="item mt-3">
+            <a class="item-img" href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1640316/rbg-memorial.jpg?w=466&h=311&q=90&f=146a45944006b5527c954a6a500d9555"
+                alt="img"
+              />
+            </a>
+            <div class="d-flex py-2 align-items-center">
+              <div class="type text-color">COVER</div>
+              <div class="catagory">U.S</div>
+            </div>
+            <div class="detail">
+              <a href="#"
+                >Biden Should Promise to Pack the Supreme Court to Save It From
+                Partisan War</a
+              >
+            </div>
+          </div>
+          <div class="item mt-3">
+            <a class="item-img" href="#"
+              ><img
+                src="https://d.newsweek.com/en/full/1641173/justice-ruth-bader-ginsburg.jpg?w=466&h=311&q=90&f=cf4341f456bddd4cc13da18215502584"
+                alt="img"
+            /></a>
+            <div class="d-flex py-2 align-items-center">
+              <div class="type text-color">COVER</div>
+              <div class="catagory">U.S</div>
+            </div>
+            <div class="detail">
+              <a href="#"
+                >Biden Should Promise to Pack the Supreme Court to Save It From
+                Partisan War</a
+              >
+            </div>
+          </div>
+          <div class="item mt-3">
+            <a class="item-img" href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1643970/per-latinovote-05-1158241102.jpg?w=466&h=311&q=90&f=9e390ddf1667e128c117c24d51cccd30"
+                alt="img"
+              />
+            </a>
+            <div class="d-flex py-2 align-items-center">
+              <div class="type text-color">COVER</div>
+              <div class="catagory">U.S</div>
+            </div>
+            <div class="detail">
+              <a href="#">
+                Biden Should Promise to Pack the Supreme Court to Save It From
+                Partisan War
+              </a>
+            </div>
+          </div>
+          <div class="item mt-3">
+            <a class="item-img" href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1641887/cul-map-wes-anderson-white-cyclon-banner.jpg?w=466&h=311&l=57&t=47&q=90&f=5ffa18499fcefd05d048d9bf9428c5bc"
+                alt="img"
+              />
+            </a>
+            <div class="d-flex py-2 align-items-center">
+              <div class="type text-color">COVER</div>
+              <div class="catagory">U.S</div>
+            </div>
+            <div class="detail">
+              <a href="#">
+                Biden Should Promise to Pack the Supreme Court to Save It From
+                Partisan War
+              </a>
+            </div>
+          </div>
+          <div class="item mt-3">
+            <a class="item-img" href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1639341/long-way-hero-2.jpg?w=466&h=311&q=90&f=b45862b19a0efd036338e3e8300df802"
+                alt="img"
+              />
+            </a>
+            <div class="d-flex py-2 align-items-center">
+              <div class="type text-color">COVER</div>
+              <div class="catagory">U.S</div>
+            </div>
+            <div class="detail">
+              <a href="#">
+                Biden Should Promise to Pack the Supreme Court to Save It From
+                Partisan War
+              </a>
+            </div>
+          </div>
+          <div class="item mt-3">
+            <a class="item-img" href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1643949/dissent.jpg?w=480&h=320&q=90&f=69fbbe728e1afd8094f22fe131b01209"
+                alt="img"
+              />
+            </a>
+            <div class="d-flex py-2 align-items-center">
+              <div class="type text-color">COVER</div>
+              <div class="catagory">U.S</div>
+            </div>
+            <div class="detail">
+              Biden Should Promise to Pack the Supreme Court to Save It From
+              Partisan War
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="editor_picks pb-4 mb-5 pl-3 pr-3">
+        <div class="header d-flex just-content-center align-items-center pb-2">
+          <div class="d-flex">
+            <span class="icon"></span>
+            <h2 class="mt-1">EDITOR'S PICK</h2>
+          </div>
+        </div>
+        <div class="row picks-container mt-2">
+          <article class="col-lg-3 col-md-6 col-sm-12 article-item mt-2">
+            <div class="article-image pb-2">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1646367/vaccine-child.jpg?w=397&h=295&f=b7dae7ab44a4a99803a0bb9575ea3435"
+                  alt="Walter Reed Medical Center, Trump COVID-19 update"
+                />
+              </a>
+              <span class="catagory">NEWS</span>
+            </div>
+            <a href="#"></a>
+            <h5 class="mt-2">
+              <a class="title-link" href="#"
+                >Trump COVID Update—What Doctors Have Said About President's
+                Illness</a
+              >
+            </h5>
+            <p>
+              Dr. Sean Conley, the president's physician, said he had been
+              concerned about "possible rapid progression of the illness,"
+              following two developments on Friday.
+            </p>
+          </article>
+          <article class="col-lg-3 col-md-6 col-sm-12 article-item mt-2">
+            <div class="article-image pb-2">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1646985/donald-trump-joe-biden-getty-2020-electiondebate.jpg?w=397&h=295&f=ef329d894ea6cb5a6acf50d8b1ed5ecc"
+                  alt="Walter Reed Medical Center, Trump COVID-19 update"
+                />
+              </a>
+              <span class="catagory">NEWS</span>
+            </div>
+            <a href="#"></a>
+            <h5 class="mt-2">
+              <a class="title-link" href="#"
+                >Trump COVID Update—What Doctors Have Said About President's
+                Illness</a
+              >
+            </h5>
+            <p>
+              Dr. Sean Conley, the president's physician, said he had been
+              concerned about "possible rapid progression of the illness,"
+              following two developments on Friday.
+            </p>
+          </article>
+          <article class="col-lg-3 col-md-6 col-sm-12 article-item mt-2">
+            <div class="article-image pb-2">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1646864/joe-biden.jpg?w=397&h=295&f=66f71846c4428719b5180a42516cfc4f"
+                  alt="Walter Reed Medical Center, Trump COVID-19 update"
+                />
+              </a>
+              <span class="catagory">NEWS</span>
+            </div>
+            <a href="#"></a>
+            <h5 class="mt-2">
+              <a class="title-link" href="#"
+                >Trump COVID Update—What Doctors Have Said About President's
+                Illness</a
+              >
+            </h5>
+            <p>
+              Dr. Sean Conley, the president's physician, said he had been
+              concerned about "possible rapid progression of the illness,"
+              following two developments on Friday.
+            </p>
+          </article>
+          <article class="col-lg-3 col-md-6 col-sm-12 article-item mt-2">
+            <div class="article-image pb-2">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1642881/acb.jpg?w=397&h=295&f=8c6a3b84a756174cb9582826bc25d63c"
+                  alt="Walter Reed Medical Center, Trump COVID-19 update"
+                />
+              </a>
+              <span class="catagory">NEWS</span>
+            </div>
+            <a href="#"></a>
+            <h5 class="mt-2">
+              <a class="title-link" href="#"
+                >Trump COVID Update—What Doctors Have Said About President's
+                Illness</a
+              >
+            </h5>
+            <p>
+              Dr. Sean Conley, the president's physician, said he had been
+              concerned about "possible rapid progression of the illness,"
+              following two developments on Friday.
+            </p>
+          </article>
+          <article class="col-lg-3 col-md-6 col-sm-12 article-item mt-2">
+            <div class="article-image pb-2">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1646416/donald-trump.jpg?w=397&h=295&f=6fc91bff10f177df9528771fe1637c97"
+                  alt="Walter Reed Medical Center, Trump COVID-19 update"
+                />
+              </a>
+              <span class="catagory">NEWS</span>
+            </div>
+            <a href="#"></a>
+            <h5 class="mt-2">
+              <a class="title-link" href="#"
+                >Trump COVID Update—What Doctors Have Said About President's
+                Illness</a
+              >
+            </h5>
+            <p>
+              Dr. Sean Conley, the president's physician, said he had been
+              concerned about "possible rapid progression of the illness,"
+              following two developments on Friday.
+            </p>
+          </article>
+          <article class="col-lg-3 col-md-6 col-sm-12 article-item mt-2">
+            <div class="article-image pb-2">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1646364/president-donald-trump-covid-19-coronavirus-getty.jpg?w=397&h=295&f=c8e1c300e0a56e91c16b972ff88f902f"
+                  alt="Walter Reed Medical Center, Trump COVID-19 update"
+                />
+              </a>
+              <span class="catagory">NEWS</span>
+            </div>
+            <a href="#"></a>
+            <h5 class="mt-2">
+              <a class="title-link" href="#"
+                >Trump COVID Update—What Doctors Have Said About President's
+                Illness</a
+              >
+            </h5>
+            <p>
+              Dr. Sean Conley, the president's physician, said he had been
+              concerned about "possible rapid progression of the illness,"
+              following two developments on Friday.
+            </p>
+          </article>
+          <article class="col-lg-3 col-md-6 col-sm-12 article-item mt-2">
+            <div class="article-image pb-2">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1646469/moscow-russia.jpg?w=397&h=295&f=82e679dc177182af167cef74a90adeed"
+                  alt="Walter Reed Medical Center, Trump COVID-19 update"
+                />
+              </a>
+              <span class="catagory">NEWS</span>
+            </div>
+            <a href="#"></a>
+            <h5 class="mt-2">
+              <a class="title-link" href="#"
+                >Trump COVID Update—What Doctors Have Said About President's
+                Illness</a
+              >
+            </h5>
+            <p>
+              Dr. Sean Conley, the president's physician, said he had been
+              concerned about "possible rapid progression of the illness,"
+              following two developments on Friday.
+            </p>
+          </article>
+          <article class="col-lg-3 col-md-6 col-sm-12 article-item mt-2">
+            <div class="article-image pb-2">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                  alt="Walter Reed Medical Center, Trump COVID-19 update"
+                />
+              </a>
+              <span class="catagory">NEWS</span>
+            </div>
+            <a href="#"></a>
+            <h5 class="mt-2">
+              <a class="title-link" href="#"
+                >Trump COVID Update—What Doctors Have Said About President's
+                Illness</a
+              >
+            </h5>
+            <p>
+              Dr. Sean Conley, the president's physician, said he had been
+              concerned about "possible rapid progression of the illness,"
+              following two developments on Friday.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="other_news pl-3 pr-3">
+        <section class="d-flex us_section py-4">
+          <h2>U.S</h2>
+          <div class="row">
+            <div class="col-lg-8 col-md-8">
+              <div class="row">
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 aside pt-2">
+              <div class="row">
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex us_section py-4">
+          <h2>U.S</h2>
+          <div class="row">
+            <div class="col-lg-8 col-md-8">
+              <div class="row">
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 aside pt-2">
+              <div class="row">
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex us_section py-4">
+          <h2>U.S</h2>
+          <div class="row">
+            <div class="col-lg-8 col-md-8">
+              <div class="row">
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 aside pt-2">
+              <div class="row">
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex us_section py-4">
+          <h2>U.S</h2>
+          <div class="row">
+            <div class="col-lg-8 col-md-8">
+              <div class="row">
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 aside pt-2">
+              <div class="row">
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex us_section py-4">
+          <h2>U.S</h2>
+          <div class="row">
+            <div class="col-lg-8 col-md-8">
+              <div class="row">
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+                <article class="col-lg-6 col-md-6 article-item mt-2">
+                  <div class="article-image pb-2">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1645918/walter-reed-medical-center-trump-covid-19-update.jpg?w=397&h=265&q=90&f=5d0ee8f0b6727b156c12c8eca6d79d81"
+                        alt="Walter Reed Medical Center, Trump COVID-19 update"
+                      />
+                    </a>
+                  </div>
+                  <a href="#"></a>
+                  <h5 class="mt-2 news_title">
+                    <a href="#"
+                      >Olympian With Grandfather on 'Last Breaths' Calls Trump
+                      'Tone Deaf'</a
+                    >
+                  </h5>
+                </article>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 aside pt-2">
+              <div class="row">
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+                <article class="col-lg-12 d-flex aside-items mb-2">
+                  <img
+                    class="mr-3 aside-item-image"
+                    src="https://d.newsweek.com/en/full/1646212/donald-trump-delete-tweet-covid-19-email-twitter.webp?w=397&h=265&f=212310f95329fc053b1d700c97b18726"
+                    alt="image"
+                  />
+                  <a href="#"
+                    ><h2>
+                      President Trump Deletes COVID Tweet, But Not For Calling
+                      It 'Chinese Virus'
+                    </h2></a
+                  >
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="subscribe-sec my-3 pl-3 pr-3 pb-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <h5>subscribe</h5>
+            <div class="subscribe d-flex align-items-center justify-content-center p-5 mb-3">
+              <div class="left">
+                <img
+                  class="first"
+                  src="https://d.newsweek.com/en/full/1641530/cover-october-02-2020.jpg?w=170&q=95&f=7dedf2b19f9910e285fdbdff096ed6a3"
+                  alt="img"
+                />
+                <img
+                  class="second"
+                  src="https://d.newsweek.com/en/full/1643943/cover-october-09-16-2020.jpg?w=170&q=95&f=f8144d83a028a40fe7ea6a5ed615ded7"
+                  alt="img"
+                />
+              </div>
+              <div class="right d-flex justify-content-center flex-column d-sm-flex flex-sm-column justify-content-sm-center d-md-block mt-5">
+                <h3 class="text-center text-sm-center text-md-left">
+                  In-depth Stories You Don't See Elsewhere About Topics You Want
+                  to Read!
+                </h3>
+                <p class="text-center text-sm-center text-md-left">
+                  All Access + Weekly Delivery. Choose A Membership That's
+                  Perfect for You!
+                </p>
+                <button type="button" name="button">
+                  subscribe
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5>Newsletter</h5>
+            <div class="newsletter d-flex">
+              <div class="cover w-100 "></div>
+              <div class="right p-4 d-flex flex-column align-items-center align-items-lg-start">
+                <h3>The starting 5</h3>
+                <p>
+                  See why nearly a quarter of a million subscribers begin their
+                  day with the Starting 5.
+                </p>
+                <div class="d-flex d-sm-flex d-md-flex d-lg-flex flex-lg-column w-100">
+                  <input type="text" placeholder="Email" name="email" value="" />
+                  <button type="button">
+                    Free sign up
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="px-3">
+        <div class="top pb-1 d-flex flex-column justify-content-start flex-md-row justify-content-between">
+          <div class="left pb-1 d-flex flex-column flex-md-row align-items-md-end">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/img/logo_foot.svg" alt="logo" />
+            </a>
+            <p>© 2020 NEWSWEEK DIGITAL LLC</p>
+          </div>
+          <div class="social pt-1">
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="bottom pt-3">
+          <ul class="lang">
+            <li>Editions:</li>
+            <li>U.S Edition</li>
+            <li>日本</li>
+            <li>Pakistan</li>
+            <li>Polska</li>
+            <li>Romania</li>
+          </ul>
+          <ul class="nav mt-2">
+            <li>About Us</li>
+            <li>Connection</li>
+            <li>Contact Us</li>
+            <li>Editorial Guidelines</li>
+            <li>Advertise</li>
+            <li>Copyright</li>
+            <li>Terms& Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Terms of Safe</li>
+            <li>Archive</li>
+            <li>Announcements</li>
+          </ul>
+          <span class="privacy">GDPR Privacy Settings</span>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
