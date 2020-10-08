@@ -54,27 +54,27 @@ a {
   }
 }
 
-.container {
-  padding: 0 !important;
+.bootstrap-override .container {
+  padding: 0;
   background-color: $color_white;
 
   @include breakpoint($xl_screen) {
-    max-width: 1310px !important;
+    max-width: 1310px;
   }
 
   @include breakpoint($lg_screen) {
-    max-width: 100% !important;
-    padding: 0 !important;
+    max-width: 100%;
+    padding: 0;
   }
 
   @include breakpoint($md_screen) {
-    max-width: 100% !important;
-    padding: 0 !important;
+    max-width: 100%;
+    padding: 0;
   }
 
   @include breakpoint($xs_screen) {
-    max-width: 100% !important;
-    padding: 0 !important;
+    max-width: 100%;
+    padding: 0;
   }
 }
 
