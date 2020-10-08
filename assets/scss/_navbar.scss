@@ -5,8 +5,6 @@ html {
 
 .bootstrap-override .navbar {
   max-width: 100%;
-  display: flex;
-  flex-direction: column;
   padding: 0;
   margin: 0;
 }
@@ -16,10 +14,7 @@ html {
   box-sizing: border-box;
   background-color: $color_red;
   padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
   margin: 0;
-  align-items: center;
   position: relative;
 
   @include breakpoint($md_screen) {
@@ -39,9 +34,6 @@ html {
   }
 
   .navbar-toggler-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: $color_gray;
   }
 
@@ -82,11 +74,6 @@ html {
     span {
       color: $color_white;
     }
-
-    @include breakpoint($xl_screen) {
-      display: flex;
-      flex-direction: column;
-    }
   }
 
   .subscribe-container {
@@ -115,11 +102,6 @@ html {
       font-size: 10px;
       margin-left: 5px;
     }
-  }
-
-  @include breakpoint($xl_screen) {
-    display: flex;
-    justify-content: space-between;
   }
 
   @include breakpoint($xl_screen) {
@@ -173,8 +155,6 @@ html {
   width: 100%;
 
   .navbar-nav {
-    display: flex;
-    justify-content: space-between;
     padding: 15px 70px 15px 0;
 
     .nav-item {

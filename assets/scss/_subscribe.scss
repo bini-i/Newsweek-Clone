@@ -29,18 +29,20 @@
     border: 0;
     line-height: 1;
     cursor: pointer;
+    @include breakpoint($sm_screen) {
+      width: 150px;
+      margin: 0 auto;
+    }
   }
 
   .subscribe {
     position: relative;
     height: 320px;
     background: $color_gray_l;
-
     @include breakpoint($md_screen) {
       flex-direction: column;
-      height: 450px;
+      height: 550px;
     }
-
     @include breakpoint ($sm_screen) {
       flex-direction: column;
       height: 600px;
@@ -48,43 +50,29 @@
 
     .left {
       position: relative;
-      display: block;
-      width: 65%;
+      display: flex;
+      justify-content: center;
+      content: "";
+      width: 255px;
+      height: 100%;
 
       .first {
         position: absolute;
-        top: -120px;
-
-        @include breakpoint ($md_screen) {
-          top: -35px;
-        }
-
-        @include breakpoint ($sm_screen) {
-          left: -35px;
-        }
+        top: 0;
+        left: 20px;
       }
 
       .second {
         position: absolute;
-        top: -100px;
-        left: 80px;
-
-        @include breakpoint ($md_screen) {
-          top: -20px;
-          left: 30px;
-        }
-
-        @include breakpoint ($sm_screen) {
-          left: -10px;
-        }
+        top: 20px;
+        left: 70px;
       }
     }
 
     .right {
       @include breakpoint($ol_screen) {
-        padding-left: 120px;
+        padding-left: 140px;
       }
-
       @include breakpoint($md_screen) {
         padding-top: 210px;
       }
@@ -95,7 +83,6 @@
     @include breakpoint($ol_screen) {
       height: 320px;
     }
-
     overflow: hidden;
     border: solid 1px $color_gray_l;
 
@@ -105,7 +92,6 @@
       background-size: cover;
       background-position: 50%;
       background-repeat: no-repeat;
-
       @include breakpoint($md_screen) {
         height: 170px;
       }
@@ -122,11 +108,9 @@
       width: 100%;
       height: 35px;
     }
-
     @include breakpoint($md_screen) {
       flex-direction: column;
     }
-
     @include breakpoint($sm_screen) {
       justify-content: center;
     }

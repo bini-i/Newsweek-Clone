@@ -71,6 +71,9 @@ body {
 
       .aside-item-image {
         height: 80px;
+        @include breakpoint($mid_screen) {
+          height: 180px;
+        }
       }
     }
   }

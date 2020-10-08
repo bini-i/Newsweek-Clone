@@ -71,7 +71,10 @@
           position: relative;
 
           img {
-            height: 400px;
+            height: 100%;
+            @include breakpoint($ol_screen) {
+              height: 335px;
+            }
           }
 
           .d-date {

@@ -32,9 +32,9 @@
 
   <body class="bootstrap-override">
     <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="banner" id="banner-effect">
-          <div id="banner-date" class="date">
+      <nav class="navbar navbar-expand-lg d-flex flex-column">
+        <div class="banner d-flex justify-content-between align-items-center" id="banner-effect">
+          <div id="banner-date" class="date d-none d-lg-flex flex-lg-column">
             <div class="wether d-flex mb-3">
                <img src="https://g.newsweek.com/img/weather/30.png" alt="weather-icon" />
                <span>&nbsp;&nbsp;27°&nbsp;Kigali, RW&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></span>
@@ -62,7 +62,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"
+              <span class="navbar-toggler-icon d-flex justify-content-center align-items-center"
                 ><i class="fas fa-bars"></i
               ></span>
             </button>
@@ -70,7 +70,7 @@
         </div>
         <div class="nav-head collapse navbar-collapse" id="navbarSupportedContent">
           <div class="header-top pr-3">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav d-flex justify-content-between">
               <li class="nav-item">
                 <a class="nav-link" href="#">U.S.</a>
               </li>
@@ -511,8 +511,8 @@
               </div>
             </div>
 
-            <h6 class="my-2 order-5 order-md-1">MY TURN</h6>
-            <div class="row my-turns d-flex order-5 order-md-1">
+            <h6 class="my-2 order-4 order-md-1">MY TURN</h6>
+            <div class="row my-turns d-flex order-4 order-md-1">
               <article class="col-md-4 col-sm-12 turn-item">
                 <img
                   class="mb-3 article-item-image"
@@ -544,8 +544,8 @@
                 >
               </article>
             </div>
-            <h6 class="my-2 order-4 order-md-2">CULTURE & TRAVEL</h6>
-            <div class="row my-turns d-flex order-4 order-md-2">
+            <h6 class="my-2 order-5 order-md-2">CULTURE & TRAVEL</h6>
+            <div class="row my-turns d-flex order-5 order-md-2">
               <article class="col-md-4 col-sm-12 turn-item">
                 <div class="image mb-3">
                   <img
@@ -1201,10 +1201,7 @@
       <div class="editor_picks pb-4 mb-5 pl-3 pr-3">
         <div class="header d-flex just-content-center align-items-center pb-2">
           <div class="d-flex">
-            <img
-              src="https://d.newsweek.com/en/full/1647048/protesters-clash.jpg?w=397&h=295&f=fc9613719c03c04e581f624c72901818"
-              alt="logo"
-            />
+            <span class="icon"></span>
             <h2 class="mt-1">EDITOR'S PICK</h2>
           </div>
         </div>
@@ -1833,7 +1830,7 @@
         <div class="row">
           <div class="col-lg-8">
             <h5>subscribe</h5>
-            <div class="subscribe d-flex align-items-center p-5 mb-3">
+            <div class="subscribe d-flex align-items-center justify-content-center p-5 mb-3">
               <div class="left">
                 <img
                   class="first"
@@ -1846,12 +1843,12 @@
                   alt="img"
                 />
               </div>
-              <div class="right">
-                <h3>
+              <div class="right d-flex justify-content-center flex-column d-sm-flex flex-sm-column justify-content-sm-center d-md-block mt-5">
+                <h3 class="text-center text-sm-center text-md-left">
                   In-depth Stories You Don't See Elsewhere About Topics You Want
                   to Read!
                 </h3>
-                <p>
+                <p class="text-center text-sm-center text-md-left">
                   All Access + Weekly Delivery. Choose A Membership That's
                   Perfect for You!
                 </p>
@@ -1886,8 +1883,8 @@
       </div>
 
       <footer class="px-3">
-        <div class="top pb-1">
-          <div class="left pb-1">
+        <div class="top pb-1 d-flex flex-column justify-content-start flex-md-row justify-content-between">
+          <div class="left pb-1 d-flex flex-column flex-md-row align-items-md-end">
             <a class="navbar-brand" href="#">
               <img src="./assets/img/logo_foot.svg" alt="logo" />
             </a>
