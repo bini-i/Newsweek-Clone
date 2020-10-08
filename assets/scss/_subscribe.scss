@@ -29,6 +29,7 @@
     border: 0;
     line-height: 1;
     cursor: pointer;
+
     @include breakpoint($sm_screen) {
       width: 150px;
       margin: 0 auto;
@@ -39,10 +40,12 @@
     position: relative;
     height: 320px;
     background: $color_gray_l;
+
     @include breakpoint($md_screen) {
       flex-direction: column;
       height: 550px;
     }
+
     @include breakpoint ($sm_screen) {
       flex-direction: column;
       height: 600px;
@@ -73,6 +76,7 @@
       @include breakpoint($ol_screen) {
         padding-left: 140px;
       }
+
       @include breakpoint($md_screen) {
         padding-top: 210px;
       }
@@ -83,6 +87,7 @@
     @include breakpoint($ol_screen) {
       height: 320px;
     }
+
     overflow: hidden;
     border: solid 1px $color_gray_l;
 
@@ -92,6 +97,7 @@
       background-size: cover;
       background-position: 50%;
       background-repeat: no-repeat;
+
       @include breakpoint($md_screen) {
         height: 170px;
       }
@@ -108,9 +114,11 @@
       width: 100%;
       height: 35px;
     }
+
     @include breakpoint($md_screen) {
       flex-direction: column;
     }
+
     @include breakpoint($sm_screen) {
       justify-content: center;
     }
